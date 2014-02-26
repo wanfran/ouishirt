@@ -19,6 +19,9 @@ class Module
         $eventManager        = $e->getApplication()->getEventManager();
         $moduleRouteListener = new ModuleRouteListener();
         $moduleRouteListener->attach($eventManager);
+        // Register a render event
+        //$app = $e->getParam('application');
+        //$app->getEventManager()->attach('render', array($this, 'setLayoutTitle'));
     }
 
     public function getConfig()
@@ -35,5 +38,29 @@ class Module
                 ),
             ),
         );
+    }
+
+    public function setLayoutTitle($e)
+    {
+        $matches    = $e->getRouteMatch();
+        $action     = ucfirst($matches->getParam('action'));
+        $controller = $matches->getParam('controller');
+        $module     = __NAMESPACE__;
+        $siteName   = 'OuiShirt';
+
+        // Getting the view helper manager from the application service manager
+        $viewHelperManager = $e->getApplication()->getServiceManager()->get('viewHelperManager');
+
+        // Getting the headTitle helper from the view helper manager
+        $headTitleHelper   = $viewHelperManager->get('headTitle');
+
+        // Setting a separator string for segments
+        $headTitleHelper->setSeparator(' - ');
+
+        // Setting the action, controller, module and site name as title segments
+        $headTitleHelper->append($action);
+        //$headTitleHelper->append($controller);
+        //$headTitleHelper->append($module);
+        $headTitleHelper->append($siteName);
     }
 }
