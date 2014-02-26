@@ -12,9 +12,7 @@ class CampaignController extends AbstractActionController
 
     public function indexAction()
     {
-//      return new ViewModel(array(
-//          'campaigns' => $this->getCampaignTable()->fetchAll(),
-//      ));
+
     }
 
      public function addAction()

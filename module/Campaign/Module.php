@@ -28,22 +28,4 @@ use Zend\Db\TableGateway\TableGateway;
          return include __DIR__ . '/config/module.config.php';
      }
 
-     public function getServiceConfig()
-     {
-         return array(
-             'factories' => array(
-                 'Campaign\Model\CampaignTable' =>  function($sm) {
-                     $tableGateway = $sm->get('CampaignTableGateway');
-                     $table = new CampaignTable($tableGateway);
-                     return $table;
-                 },
-                 'CampaignTableGateway' => function ($sm) {
-                     $dbAdapter = $sm->get('Zend\Db\Adapter\Adapter');
-                     $resultSetPrototype = new ResultSet();
-                     $resultSetPrototype->setArrayObjectPrototype(new Campaign());
-                     return new TableGateway('campaign', $dbAdapter, null, $resultSetPrototype);
-                 },
-             ),
-         );
-     }
  }
