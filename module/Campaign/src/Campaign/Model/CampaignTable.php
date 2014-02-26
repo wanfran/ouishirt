@@ -1,10 +1,10 @@
 <?php
 
-namespace Album\Model;
+namespace Campaign\Model;
 
  use Zend\Db\TableGateway\TableGateway;
 
- class AlbumTable
+ class CampaignTable
  {
      protected $tableGateway;
 
@@ -19,7 +19,7 @@ namespace Album\Model;
          return $resultSet;
      }
 
-     public function getAlbum($id)
+     public function getCampaign($id)
      {
          $id  = (int) $id;
          $rowset = $this->tableGateway->select(array('id' => $id));
@@ -30,26 +30,26 @@ namespace Album\Model;
          return $row;
      }
 
-     public function saveAlbum(Album $album)
+     public function saveCampaign(Campaign $campaign)
      {
          $data = array(
-             'artist' => $album->artist,
-             'title'  => $album->title,
+             'artist' => $campaign->artist,
+             'title'  => $campaign->title,
          );
 
-         $id = (int) $album->id;
+         $id = (int) $campaign->id;
          if ($id == 0) {
              $this->tableGateway->insert($data);
          } else {
-             if ($this->getAlbum($id)) {
+             if ($this->getCampaign($id)) {
                  $this->tableGateway->update($data, array('id' => $id));
              } else {
-                 throw new \Exception('Album id does not exist');
+                 throw new \Exception('Campaign id does not exist');
              }
          }
      }
 
-     public function deleteAlbum($id)
+     public function deleteCampaign($id)
      {
          $this->tableGateway->delete(array('id' => (int) $id));
      }

@@ -2,7 +2,7 @@
 return array(
      'controllers' => array(
          'invokables' => array(
-             'Album\Controller\Album' => 'Album\Controller\AlbumController',
+             'Campaign\Controller\Campaign' => 'Campaign\Controller\CampaignController',
          ),
      ),
 
@@ -11,13 +11,13 @@ return array(
              'album' => array(
                  'type'    => 'segment',
                  'options' => array(
-                     'route'    => '/album[/][:action][/:id]',
+                     'route'    => '/campaign[/][:action][/:id]',
                      'constraints' => array(
                          'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
                          'id'     => '[0-9]+',
                      ),
                      'defaults' => array(
-                         'controller' => 'Album\Controller\Album',
+                         'controller' => 'Campaign\Controller\Campaign',
                          'action'     => 'index',
                      ),
                  ),
@@ -27,7 +27,7 @@ return array(
 
      'view_manager' => array(
          'template_path_stack' => array(
-             'album' => __DIR__ . '/../view',
+             'campaign' => __DIR__ . '/../view',
          ),
      ),
  );

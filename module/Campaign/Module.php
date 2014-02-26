@@ -1,9 +1,9 @@
 <?php 
 
-namespace Album;
+namespace Campaign;
 
-use Album\Model\Album;
-use Album\Model\AlbumTable;
+use Campaign\Model\Campaign;
+use Campaign\Model\CampaignTable;
 use Zend\Db\ResultSet\ResultSet;
 use Zend\Db\TableGateway\TableGateway;
 
@@ -32,16 +32,16 @@ use Zend\Db\TableGateway\TableGateway;
      {
          return array(
              'factories' => array(
-                 'Album\Model\AlbumTable' =>  function($sm) {
-                     $tableGateway = $sm->get('AlbumTableGateway');
-                     $table = new AlbumTable($tableGateway);
+                 'Campaign\Model\CampaignTable' =>  function($sm) {
+                     $tableGateway = $sm->get('CampaignTableGateway');
+                     $table = new CampaignTable($tableGateway);
                      return $table;
                  },
-                 'AlbumTableGateway' => function ($sm) {
+                 'CampaignTableGateway' => function ($sm) {
                      $dbAdapter = $sm->get('Zend\Db\Adapter\Adapter');
                      $resultSetPrototype = new ResultSet();
-                     $resultSetPrototype->setArrayObjectPrototype(new Album());
-                     return new TableGateway('album', $dbAdapter, null, $resultSetPrototype);
+                     $resultSetPrototype->setArrayObjectPrototype(new Campaign());
+                     return new TableGateway('campaign', $dbAdapter, null, $resultSetPrototype);
                  },
              ),
          );
