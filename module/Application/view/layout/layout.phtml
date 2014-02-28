@@ -18,21 +18,24 @@
                         ->prependStylesheet($this->basePath() . '/css/print.css')
                         ->prependStylesheet($this->basePath() . '/css/responsive.css')
                         ->prependStylesheet($this->basePath() . '/css/retina.css')
-                        ->prependStylesheet($this->basePath() . '/css/screen.css', 'screen, projection') ?>
+                        ->prependStylesheet($this->basePath() . '/css/screen.css', 'screen, projection')
+                        ->prependStylesheet($this->basePath() . '/css/normalize.min.css') ?>
 
         <!-- Scripts -->
         <?php echo $this->headScript()
-            ->prependFile($this->basePath() . '/js/modernizr-2.6.2.min.js')
+            ->prependFile($this->basePath() . '/js/vendor/modernizr-2.6.2.min.js')
         ; ?>
 
     </head>
     <body class="index">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
         <div id="root">
             <?php echo $this->partial('header'); ?>
             <?php echo $this->content; ?>
         </div><!--end root -->
         <?php echo $this->partial('footer'); ?>
-        <?php echo $this->inlineScript() ?>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
