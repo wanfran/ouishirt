@@ -1,3 +1,18 @@
+
+<?php 
+        $form = $this->form;
+        $form->setAttribute('action', $this->url('application', array('controller' => 'index', 'action' => 'index')));
+        $form->prepare();
+
+        echo $this->form()->openTag($form);
+        echo $this->formRow($form->get('user_name'));
+        echo $this->formRow($form->get('user_password'));
+        echo $this->formRow($form->get('rememberme'));
+        echo $this->formSubmit($form->get('submit'));
+        echo $this->form()->closeTag();
+ ?>
+
+
       <section id="slider">
         <div class="wrapper">
           <img src="./img/slider.jpg" />
