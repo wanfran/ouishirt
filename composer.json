@@ -6,9 +6,19 @@
         "framework",
         "zf2"
     ],
+    "minimum-stability": "dev",
     "homepage": "http://framework.zend.com/",
     "require": {
         "php": ">=5.3.3",
-        "zendframework/zendframework": "2.2.*"
+        "zendframework/zendframework": "2.2.*",
+        "zf-commons/zfc-user": "dev-master",
+        "zendframework/zend-developer-tools": "dev-master",
+        "socalnick/scn-social-auth": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Hybrid": "vendor/hybridauth/hybridauth/"
+        },
+        "classmap": ["vendor/hybridauth"]
     }
 }
