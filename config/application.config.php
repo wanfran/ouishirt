@@ -7,6 +7,8 @@ return array(
         'ScnSocialAuth',
         'ZfcBase',
         'ZfcUser',
+        'BjyAuthorize',
+        'User',
         'Album',
         //'auth',
         'Campaign',

@@ -1,5 +1,20 @@
-<?php echo $this->zfcUserLoginWidget(); ?>
-
+<?php echo $this->serverUrl(true);  ?>
+<?php  echo $this->ZfcUserLoginWidget(array('redirect' => $this->serverUrl(true))); ?>
+<?php // echo $this->ZfcUserLoginWidget(); ?>
+<?php 
+echo $this->translate("Home", "default", $this->lang_)."<br>";
+echo $this->translate("Test de la mort", "default", $this->lang_)."<br>";
+ ?>
+<?php echo $this->lang_."<br>"; ?>
+<?php echo $this->basePath()."<br>"; ?>
+<?php echo $this->partial('layout/languages.phtml', array(
+                    'lang' => array(
+                        'English'  => 'en-US',
+                        'Français' => 'fr-FR',
+                        'Deutsch'  => 'de-DE',
+                    ),
+                    'selected' => $this->lang,
+              )); ?>
       <header>
         <div id="topBar" class="">
           <div class="wrapper clearfix">
@@ -22,7 +37,7 @@
                 <a href="#">Comment ça marche&nbsp;?</a>
               </li>
               <li class="left">
-                <a href="#">Campagnes</a>
+                <a href="<?php echo $this->url('campaign', array('lang' => $this->lang , 'action' => 'index')); ?>">Campagnes</a>
               </li>
             </ul>
           </div>

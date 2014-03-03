@@ -11,9 +11,10 @@
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "2.2.*",
-        "zf-commons/zfc-user": "dev-master",
+        "zf-commons/zfc-user": "0.1.*",
         "zendframework/zend-developer-tools": "dev-master",
-        "socalnick/scn-social-auth": "dev-master"
+        "socalnick/scn-social-auth": "dev-master",
+        "bjyoungblood/bjy-authorize": "1.4.*"
     },
     "autoload": {
         "psr-0": {

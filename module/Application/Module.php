@@ -9,16 +9,6 @@
 
 namespace Application;
 
-// Add this for Table Date Gateway
-use Application\Model\Auth;
-use Application\Model\UsersTable;
-use Zend\Db\ResultSet\ResultSet;
-use Zend\Db\TableGateway\TableGateway;
-// Add this for SMTP transport
-use Zend\ServiceManager\ServiceManager;
-use Zend\Mail\Transport\Smtp;
-use Zend\Mail\Transport\SmtpOptions;
-
 use Zend\Mvc\ModuleRouteListener;
 use Zend\Mvc\MvcEvent;
 
@@ -26,12 +16,57 @@ class Module
 {
     public function onBootstrap(MvcEvent $e)
     {
-        $eventManager        = $e->getApplication()->getEventManager();
-        $moduleRouteListener = new ModuleRouteListener();
-        $moduleRouteListener->attach($eventManager);
+       
         // Register a render event
         //$app = $e->getParam('application');
         //$app->getEventManager()->attach('render', array($this, 'setLayoutTitle'));
+
+        
+
+
+
+
+        $session = $e->getApplication()->getServiceManager()->get('session');
+        if (isset($session->lang)) {
+            $translator = $e->getApplication()->getServiceManager()->get('translator');
+            $translator->setLocale($session->lang);
+
+            $viewModel = $e->getViewModel();
+            $viewModel->lang = str_replace('_', '-', $session->lang);
+        }
+
+        $eventManager = $e->getApplication()->getEventManager();
+        $eventManager->attach('route', function ($e) {
+            $lang = $e->getRouteMatch()->getParam('lang');
+
+            // If there is no lang parameter in the route, nothing to do
+            if (empty($lang)) {
+                return;
+            }
+
+            $services = $e->getApplication()->getServiceManager();
+
+            // If the session language is the same, nothing to do
+            $session = $services->get('session');
+            if (isset($session->lang) && ($session->lang == $lang)) {
+                return;
+            }
+
+            $viewModel  = $e->getViewModel();
+            $translator = $services->get('translator');
+
+            $viewModel->lang = $lang;
+            $lang = str_replace('-', '_', $lang);
+            $viewModel->lang_ = $lang;
+            $translator->setLocale($lang);
+            // Attach the translator to the router
+            $e->getRouter()->setTranslator($translator);
+            $session->lang = $lang;
+        }, -10);
+        
+        $moduleRouteListener = new ModuleRouteListener();
+        $moduleRouteListener->attach($eventManager);
+
     }
 
     public function getConfig()
@@ -46,33 +81,6 @@ class Module
                 'namespaces' => array(
                     __NAMESPACE__ => __DIR__ . '/src/' . __NAMESPACE__,
                 ),
-            ),
-        );
-    }
-
-    public function getServiceConfig()
-    {
-        return array(
-            'factories' => array(
-                // For Yable data Gateway
-                'Application\Model\UsersTable' =>  function($sm) {
-                    $tableGateway = $sm->get('UsersTableGateway');
-                    $table = new UsersTable($tableGateway);
-                    return $table;
-                },
-                'UsersTableGateway' => function ($sm) {
-                    $dbAdapter = $sm->get('Zend\Db\Adapter\Adapter');
-                    $resultSetPrototype = new ResultSet();
-                    $resultSetPrototype->setArrayObjectPrototype(new Auth()); // Notice what is set here
-                    return new TableGateway('users', $dbAdapter, null, $resultSetPrototype);
-                },
-                // Add this for SMTP transport
-                'mail.transport' => function (ServiceManager $serviceManager) {
-                    $config = $serviceManager->get('Config'); 
-                    $transport = new Smtp();                
-                    $transport->setOptions(new SmtpOptions($config['mail']['transport']['options']));
-                    return $transport;
-                },
             ),
         );
     }

@@ -40,7 +40,7 @@ $settings = array(
      *
      * Accepted values: boolean true or false
      */
-    //'enable_username' => false,
+    'enable_username' => true,
 
     /**     
      * Authentication Adapters
@@ -60,7 +60,7 @@ $settings = array(
      *
      * Accepted values: boolean true or false
      */
-    'enable_display_name' => true,
+    'enable_display_name' => false,
 
     /**
      * Modes for authentication identity match
@@ -134,7 +134,7 @@ $settings = array(
      *
      * Accepted values: boolean true or false
      */
-    //'use_redirect_parameter_if_present' => true,
+    'use_redirect_parameter_if_present' => true,
 
     /**
 	 * Sets the view template for the user login widget
@@ -145,6 +145,14 @@ $settings = array(
     //'user_login_widget_view_template' => 'zfc-user/user/login.phtml',
 
     /**
+     * Sets the view template for the user register widget
+     *
+     * Default value: 'zfc-user/user/register.phtml'
+     * Accepted values: string path to a view script
+     */
+    //'user_register_widget_view_template' => 'zfc-user/user/register.phtml',
+
+    /**
      * Login Redirect Route
      *
      * Upon successful login the user will be redirected to the entered route
@@ -153,7 +161,7 @@ $settings = array(
      * Accepted values: A valid route name within your application
      *
      */
-    //'login_redirect_route' => 'zfcuser',
+    'login_redirect_route' => 'home',
 
     /**
      * Logout Redirect Route
@@ -163,7 +171,7 @@ $settings = array(
      * Default value: 'zfcuser/login'
      * Accepted values: A valid route name within your application
      */
-    //'logout_redirect_route' => 'zfcuser/login',
+    'logout_redirect_route' => 'home',
 
     /**
      * Password Security
@@ -193,7 +201,7 @@ $settings = array(
      * 
      * Should user's state be used in the registration/login process?
      */
-    //'enable_user_state' => true,
+    'enable_user_state' => true,
     
     /**
      * Default user state upon registration
@@ -201,7 +209,7 @@ $settings = array(
      * What state user should have upon registration?
      * Allowed value type: integer
      */
-    //'default_user_state' => 1,
+    'default_user_state' => 1,
     
     /**
      * States which are allowing user to login
@@ -210,12 +218,12 @@ $settings = array(
      * Include null if you want user's with no state to login as well.
      * Allowed value types: null and integer
      */
-    //'allowed_login_states' => array( null, 1 ),
+    'allowed_login_states' => array( null, 1 ),
     
     /**
      * User table name
      */
-    //'table_name' => 'user',
+    'table_name' => 'users',
     
     /**
      * End of ZfcUser configuration

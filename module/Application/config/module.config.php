@@ -9,14 +9,19 @@
 
 return array(
     'router' => array(
+        'router_class' => 'Zend\Mvc\Router\Http\TranslatorAwareTreeRouteStack',
         'routes' => array(
             'home' => array(
-                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'type' => 'Zend\Mvc\Router\Http\Segment',
                 'options' => array(
-                    'route'    => '/',
+                    'route'    => '/[:lang]',
+                    'constraints' => array(
+                        'lang' => '[a-z]{2}(-[A-Z]{2}){0,1}'
+                    ),
                     'defaults' => array(
                         'controller' => 'Application\Controller\Index',
                         'action'     => 'index',
+                        'lang'       => 'fr-FR',
                     ),
                 ),
             ),
@@ -25,9 +30,12 @@ return array(
             // module. Simply drop new controllers in, and you can access them
             // using the path /application/:controller/:action
             'application' => array(
-                'type'    => 'Literal',
+                'type'    => 'segment',
                 'options' => array(
-                    'route'    => '/',
+                    'route'    => '/[:lang]/',
+                    'constraints' => array(
+                        'lang' => '[a-z]{2}(-[A-Z]{2}){0,1}'
+                    ),
                     'defaults' => array(
                         '__NAMESPACE__' => 'Application\Controller',
                         'controller'    => 'Index',
@@ -53,16 +61,22 @@ return array(
         ),
     ),
     'service_manager' => array(
+        'factories' => array(
+            'translator' => 'Zend\I18n\Translator\TranslatorServiceFactory',
+        ),
         'abstract_factories' => array(
             'Zend\Cache\Service\StorageCacheAbstractServiceFactory',
             'Zend\Log\LoggerAbstractServiceFactory',
         ),
         'aliases' => array(
-            'translator' => 'MvcTranslator',
+           // 'translator' => 'MvcTranslator',
+        ),
+        'services' => array(
+            'session' => new Zend\Session\Container('ouishirt'),
         ),
     ),
     'translator' => array(
-        'locale' => 'fr_FR',
+        'locale' => 'en_US',
         'translation_file_patterns' => array(
             array(
                 'type'     => 'gettext',
