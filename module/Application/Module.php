@@ -56,12 +56,13 @@ class Module
             $translator = $services->get('translator');
 
             $viewModel->lang = $lang;
+            $session->lang = $lang;
             $lang = str_replace('-', '_', $lang);
             $viewModel->lang_ = $lang;
             $translator->setLocale($lang);
             // Attach the translator to the router
             $e->getRouter()->setTranslator($translator);
-            $session->lang = $lang;
+            $session->lang_ = $lang;
         }, -10);
         
         $moduleRouteListener = new ModuleRouteListener();

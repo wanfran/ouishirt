@@ -149,6 +149,7 @@ class UserController extends AbstractActionController
         if (!$auth->isValid()) {
             $this->flashMessenger()->setNamespace('zfcuser-login-form')->addMessage($this->failedLoginMessage);
             $adapter->resetAdapters();
+            //HERE
             $session = new Container('ouishirt');
             return $this->redirect()->toUrl($session->url);
         }
@@ -184,9 +185,9 @@ class UserController extends AbstractActionController
         } else {
             $redirect = false;
         }
-
-        $redirectUrl = $this->url()->fromRoute(static::ROUTE_REGISTER)
-            . ($redirect ? '?redirect=' . rawurlencode($redirect) : '');
+        //HERE
+        $session = new Container('ouishirt');
+        $redirectUrl = $this->url()->fromRoute('user/register', array('lang' => $session->lang));
         $prg = $this->prg($redirectUrl, true);
 
         if ($prg instanceof Response) {
