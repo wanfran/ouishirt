@@ -12,7 +12,7 @@ return array(
              'campaign' => array(
                  'type'    => 'segment',
                  'options' => array(
-                     'route'    => '/[:lang]/campaign[/]',
+                     'route'    => '[/:lang]/campaign[/]',
                      'constraints' => array(
                         'lang' => '[a-z]{2}(-[A-Z]{2}){0,1}'
                     ),

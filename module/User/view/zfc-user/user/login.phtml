@@ -1,9 +1,13 @@
 <h1><?php echo $this->translate('Sign In'); ?></h1>
 <p>TEST DE OUF</p>
+<?php 
+$session = new \Zend\Session\Container('ouishirt');
+echo $session->lang;
+?>
 <?php
 $form = $this->loginForm;
 $form->prepare();
-$form->setAttribute('action', $this->url('zfcuser/login'));
+$form->setAttribute('action', $this->url('user/login', array('lang' => $session->lang)));
 $form->setAttribute('method', 'post');
 ?>
 
@@ -28,5 +32,5 @@ $form->setAttribute('method', 'post');
 <?php echo $this->form()->closeTag() ?>
 
 <?php if ($this->enableRegistration) : ?>
-<?php echo $this->translate('Not registered?'); ?> <a href="<?php echo $this->url('zfcuser/register') . ($this->redirect ? '?redirect='.$this->redirect : '') ?>"><?php echo $this->translate('Sign up!'); ?></a>
+<?php echo $this->translate('Not registered?'); ?> <a href="<?php echo $this->url('user/register', array('lang' => $session->lang)); ?>"><?php echo $this->translate('Sign up!'); ?></a>
 <?php endif; ?>

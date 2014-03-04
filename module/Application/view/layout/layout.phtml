@@ -1,3 +1,19 @@
+<?php 
+//start session service
+$session = new \Zend\Session\Container('ouishirt');
+//Store current url
+$currentUrl = $this->serverUrl(true);
+echo $currentUrl.' COUCOU<br>';
+//check if we are NOT on login/register page
+if (strpos($currentUrl, 'login') == false AND strpos($currentUrl, 'register') == false) {
+    //Store current url
+    $session->url = $currentUrl;
+}
+echo $session->url;
+?>
+
+
+
 <?php echo $this->doctype(); ?>
 
 <html lang="en">

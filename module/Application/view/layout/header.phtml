@@ -1,13 +1,22 @@
+<?php $session = new \Zend\Session\Container('ouishirt'); ?>
 <?php echo $this->serverUrl(true);  ?>
-<?php  echo $this->ZfcUserLoginWidget(array('redirect' => $this->serverUrl(true))); ?>
+<?php  echo $this->ZfcUserLoginWidget(array('redirect' => $session->url)); ?>
 <?php // echo $this->ZfcUserLoginWidget(); ?>
 <?php 
 echo $this->translate("Home", "default", $this->lang_)."<br>";
 echo $this->translate("Test de la mort", "default", $this->lang_)."<br>";
+echo $this->translate("Welcome to OuiShirt", "default", $this->lang_)."<br>";
  ?>
 <?php echo $this->lang_."<br>"; ?>
 <?php echo $this->basePath()."<br>"; ?>
-<?php echo $this->partial('layout/languages.phtml', array(
+
+      <header>
+        <div id="topBar" class="">
+          <div class="wrapper clearfix">
+            <p class="left">Vous représentez une cause ou un projet&nbsp;? <a href="#">En savoir plus&nbsp;!</a></p>
+
+            <div id="languageBox" class="right">
+              <?php echo $this->partial('layout/languages.phtml', array(
                     'lang' => array(
                         'English'  => 'en-US',
                         'Français' => 'fr-FR',
@@ -15,12 +24,16 @@ echo $this->translate("Test de la mort", "default", $this->lang_)."<br>";
                     ),
                     'selected' => $this->lang,
               )); ?>
-      <header>
-        <div id="topBar" class="">
-          <div class="wrapper clearfix">
-            <p class="left">Vous représentez une cause ou un projet&nbsp;? <a href="#">En savoir plus&nbsp;!</a></p>
-
+            </div>
             <div id="loginBox" class="right">
+              <?php if($this->zfcUserIdentity()): ?>
+              <?php echo $this->zfcUserDisplayName() ?>
+              <a href="<?php echo $this->url('user/logout', array('lang' => $this->lang, 'redirect' => $this->serverUrl(true))) ?>">[<?php echo $this->translate('Sign Out'); ?>]</a>
+              <?php endif?>
+              <?php if(!$this->zfcUserIdentity()): ?>
+              <a href="<?php echo $this->url('user/login', array('lang' => $this->lang)); ?>">Login</a>
+              <a href="<?php echo $this->url('user/register', array('lang' => $this->lang)); ?>">Register</a>
+              <?php endif?>
             </div>
           </div>
         </div>

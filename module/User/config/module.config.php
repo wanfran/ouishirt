@@ -11,16 +11,16 @@ return array(
              'user' => array(
                  'type'    => 'segment',
                  'options' => array(
-                     'route'    => '/profil',
+                     'route'    => '[/:lang]/profil',
                      'defaults' => array(
                          'controller' => 'User\Controller\User',
                          'action'     => 'index',
                      ),
                  ),
-                 'may_terminate' => true,
+                'may_terminate' => true,
                 'child_routes' => array(
                     'login' => array(
-                        'type' => 'Literal',
+                        'type' => 'segment',
                         'options' => array(
                             'route' => '/login',
                             'defaults' => array(
@@ -30,7 +30,7 @@ return array(
                         ),
                     ),
                     'authenticate' => array(
-                        'type' => 'Literal',
+                        'type' => 'segment',
                         'options' => array(
                             'route' => '/authenticate',
                             'defaults' => array(
@@ -40,7 +40,7 @@ return array(
                         ),
                     ),
                     'logout' => array(
-                        'type' => 'Literal',
+                        'type' => 'segment',
                         'options' => array(
                             'route' => '/logout',
                             'defaults' => array(
@@ -50,7 +50,7 @@ return array(
                         ),
                     ),
                     'register' => array(
-                        'type' => 'Literal',
+                        'type' => 'segment',
                         'options' => array(
                             'route' => '/register',
                             'defaults' => array(
@@ -60,7 +60,7 @@ return array(
                         ),
                     ),
                     'changepassword' => array(
-                        'type' => 'Literal',
+                        'type' => 'segment',
                         'options' => array(
                             'route' => '/change-password',
                             'defaults' => array(
@@ -70,7 +70,7 @@ return array(
                         ),                        
                     ),
                     'changeemail' => array(
-                        'type' => 'Literal',
+                        'type' => 'segment',
                         'options' => array(
                             'route' => '/change-email',
                             'defaults' => array(

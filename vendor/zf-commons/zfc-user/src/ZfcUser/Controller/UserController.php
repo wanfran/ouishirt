@@ -9,6 +9,7 @@ use Zend\Stdlib\Parameters;
 use Zend\View\Model\ViewModel;
 use ZfcUser\Service\User as UserService;
 use ZfcUser\Options\UserControllerOptionsInterface;
+use Zend\Session\Container;
 
 class UserController extends AbstractActionController
 {
@@ -72,7 +73,7 @@ class UserController extends AbstractActionController
     public function loginAction()
     {
         if ($this->zfcUserAuthentication()->getAuthService()->hasIdentity()) {
-            return $this->redirect()->toRoute($this->getOptions()->getLoginRedirectRoute());
+            return $this->redirect()->toRoute('$this->getOptions()->getLoginRedirectRoute()');
         }
 
         $request = $this->getRequest();
@@ -148,8 +149,8 @@ class UserController extends AbstractActionController
         if (!$auth->isValid()) {
             $this->flashMessenger()->setNamespace('zfcuser-login-form')->addMessage($this->failedLoginMessage);
             $adapter->resetAdapters();
-            return $this->redirect()->toUrl($this->url()->fromRoute(static::ROUTE_LOGIN)
-                . ($redirect ? '?redirect='. rawurlencode($redirect) : ''));
+            $session = new Container('ouishirt');
+            return $this->redirect()->toUrl($session->url);
         }
 
         if ($this->getOptions()->getUseRedirectParameterIfPresent() && $redirect) {
