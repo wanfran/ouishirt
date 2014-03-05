@@ -130,6 +130,8 @@ class UserController extends AbstractActionController
      */
     public function authenticateAction()
     {
+        $session = new Container('ouishirt');
+
         if ($this->zfcUserAuthentication()->getAuthService()->hasIdentity()) {
             return $this->redirect()->toRoute($this->getOptions()->getLoginRedirectRoute());
         }
@@ -149,16 +151,21 @@ class UserController extends AbstractActionController
         if (!$auth->isValid()) {
             $this->flashMessenger()->setNamespace('zfcuser-login-form')->addMessage($this->failedLoginMessage);
             $adapter->resetAdapters();
+            //ORIGINAL
+            //return $this->redirect()->toUrl($this->url()->fromRoute(static::ROUTE_LOGIN)
+            //    . ($redirect ? '?redirect='. rawurlencode($redirect) : ''));
+
             //HERE
-            $session = new Container('ouishirt');
-            return $this->redirect()->toUrl($session->url);
+            
+            return $this->redirect()->toUrl($this->url()->fromRoute('user/login', array('lang' => $session->lang))
+                . ($redirect ? '?redirect='. rawurlencode($redirect) : ''));
         }
 
         if ($this->getOptions()->getUseRedirectParameterIfPresent() && $redirect) {
             return $this->redirect()->toUrl($redirect);
         }
-
-        return $this->redirect()->toRoute($this->getOptions()->getLoginRedirectRoute());
+        return $this->redirect()->toUrl($session->url);
+        //return $this->redirect()->toRoute($this->getOptions()->getLoginRedirectRoute());
     }
 
     /**
@@ -185,9 +192,14 @@ class UserController extends AbstractActionController
         } else {
             $redirect = false;
         }
+
+        //ORIGINAL
+        //$redirectUrl = $this->url()->fromRoute(static::ROUTE_REGISTER)
+        //    . ($redirect ? '?redirect=' . rawurlencode($redirect) : '');
         //HERE
         $session = new Container('ouishirt');
-        $redirectUrl = $this->url()->fromRoute('user/register', array('lang' => $session->lang));
+        $redirectUrl = $this->url()->fromRoute('user/register', array('lang' => $session->lang)) . ($redirect ? '?redirect=' . rawurlencode($redirect) : '');
+
         $prg = $this->prg($redirectUrl, true);
 
         if ($prg instanceof Response) {
