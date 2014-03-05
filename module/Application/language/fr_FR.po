@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ZendSkeletonApplication\n"
+"Project-Id-Version: OuiShirt\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-03 23:13+0100\n"
-"PO-Revision-Date: 2014-03-03 23:13+0100\n"
+"POT-Creation-Date: 2014-03-05 12:57+0100\n"
+"PO-Revision-Date: 2014-03-05 13:00+0100\n"
 "Last-Translator: Evan Coury <me@evancoury.com>\n"
-"Language-Team: ZF Contibutors <zf-devteam@zend.com>\n"
+"Language-Team: OuiShirt <support@ouishirt.com>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,6 +13,7 @@ msgstr ""
 "X-Poedit-KeywordsList: translate\n"
 "X-Poedit-Basepath: .\n"
 "X-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../view/error/404.phtml:1
@@ -82,17 +83,124 @@ msgstr "Aucune exception disponible"
 msgid "An error occurred"
 msgstr "Une erreur est survenue"
 
-#: ../view/layout/header.phtml:5
-msgid "Home"
-msgstr "Accueil"
+#: ../view/layout/footer.phtml:11
+#, php-format
+msgid "100% satisfaction"
+msgstr "100% satisfaction"
 
-#: ../view/layout/header.phtml:6
-msgid "Test de la mort"
-msgstr ""
+#: ../view/layout/footer.phtml:19
+msgid "Besoin d'aide ?"
+msgstr "Besoin d'aide ?"
 
-#: ../view/layout/header.phtml:7
-msgid "Welcome to OuiShirt"
-msgstr "Bienvenue sur Ouishirt"
+#: ../view/layout/footer.phtml:22 ../view/layout/header.phtml:43
+msgid "Comment ça marche ?"
+msgstr "Comment ça marche ?"
+
+#: ../view/layout/footer.phtml:25
+msgid "FAQ"
+msgstr "FAQ"
+
+#: ../view/layout/footer.phtml:28
+msgid "Livraison"
+msgstr "Livraison"
+
+#: ../view/layout/footer.phtml:31
+msgid "Contactez-nous"
+msgstr "Contactez-nous"
+
+#: ../view/layout/footer.phtml:37
+msgid "Newsletter"
+msgstr "Newsletter"
+
+#: ../view/layout/footer.phtml:38
+msgid "Restez au courant de nos nouveautés !"
+msgstr "Restez au courant de nos nouveautés !"
+
+#: ../view/layout/footer.phtml:44
+msgid "Plus"
+msgstr "Plus"
+
+#: ../view/layout/footer.phtml:47
+msgid "À propos"
+msgstr "À propos"
+
+#: ../view/layout/footer.phtml:50
+msgid "Nos produits"
+msgstr "Nos produits"
+
+#: ../view/layout/footer.phtml:53
+msgid "Entreprises"
+msgstr "Entreprises"
+
+#: ../view/layout/footer.phtml:56
+msgid "CGV"
+msgstr "CGV"
+
+#: ../view/layout/footer.phtml:56
+msgid "CGU"
+msgstr "CGU"
+
+#: ../view/layout/footer.phtml:59
+msgid "Emplois"
+msgstr "Emplois"
+
+#: ../view/layout/footer.phtml:62
+msgid "Blog"
+msgstr "Blog"
+
+#: ../view/layout/footer.phtml:70
+msgid "Votre compte"
+msgstr "Votre compte"
+
+#: ../view/layout/footer.phtml:73
+msgid "Se connecter"
+msgstr "Se connecter"
+
+#: ../view/layout/footer.phtml:76
+msgid "Votre commande"
+msgstr "Votre commande"
+
+#: ../view/layout/footer.phtml:79
+msgid "Frais d'envoi"
+msgstr "Frais d'envoi"
+
+#: ../view/layout/footer.phtml:85
+msgid "Nous acceptons"
+msgstr "Nous acceptons"
+
+#: ../view/layout/header.phtml:9
+msgid "Vous représentez une cause ou un projet ?"
+msgstr "Vous représentez une cause ou un projet ?"
+
+#: ../view/layout/header.phtml:9
+msgid "En savoir plus !"
+msgstr "En savoir plus !"
+
+#: ../view/layout/header.phtml:24
+msgid "Déconnexion"
+msgstr "Déconnexion"
+
+#: ../view/layout/header.phtml:27
+msgid "Connexion"
+msgstr "Connexion"
+
+#: ../view/layout/header.phtml:28
+msgid "Inscription"
+msgstr "Inscription"
+
+#: ../view/layout/header.phtml:40
+msgid "Explorer"
+msgstr "Explorer"
+
+#: ../view/layout/header.phtml:46
+msgid "Campagnes"
+msgstr "Campagnes"
+
+#~ msgid "Home"
+#~ msgstr "Accueil"
+
+#~ msgid "Welcome to OuiShirt"
+#~ msgstr "Bienvenue sur Ouishirt"
 
 #~ msgid "Skeleton Application"
 #~ msgstr "Tutoriel"
@@ -171,6 +279,3 @@ msgstr "Bienvenue sur Ouishirt"
 
 #~ msgid "Ping us on IRC"
 #~ msgstr "Rejoignez-nous sur IRC"
-
-#~ msgid "Exception"
-#~ msgstr "Exception"

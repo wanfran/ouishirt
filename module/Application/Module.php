@@ -32,7 +32,8 @@ class Module
             $translator->setLocale($session->lang);
 
             $viewModel = $e->getViewModel();
-            $viewModel->lang = str_replace('_', '-', $session->lang);
+            $viewModel->lang_ = $session->lang_;
+            $viewModel->lang = substr($session->lang, 0, 2);
         }
 
         $eventManager = $e->getApplication()->getEventManager();
@@ -57,7 +58,23 @@ class Module
 
             $viewModel->lang = $lang;
             $session->lang = $lang;
-            $lang = str_replace('-', '_', $lang);
+            switch ($lang) {
+                case 'fr':
+                    $lang = 'fr_FR';
+                    break;
+                case 'en':
+                    $lang = 'en_US';
+                    break;
+                case 'de':
+                    $lang = 'de_DE';
+                    break;
+                case 'nl':
+                    $lang = 'nl_NL';
+                    break;
+                default:
+                    $lang = 'fr_FR';
+                    break;
+            };
             $viewModel->lang_ = $lang;
             $translator->setLocale($lang);
             // Attach the translator to the router

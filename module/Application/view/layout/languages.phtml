@@ -13,11 +13,16 @@
 </select>
 <script language="JavaScript">
     function changeLang(lang) {
-        var newUrl = location.href.replace(/[a-z]{2}-[A-Z]{2}/,lang);
+        var slashIndex = 33; //LOCAL
+        //var slashIndex = 20; //ONLINE
+        var startUrl = location.href.slice(0, slashIndex);
+        var endUrl = location.href.slice(slashIndex+2);
+        var newUrl = startUrl + lang + endUrl;
+
         if (newUrl != location.href) {
             return newUrl;
         }
-        var n = location.href.indexOf('/',26);
+        var n = location.href.indexOf('/',slashIndex);
         if (location.href.substr(n) == '/') {
             return location.href.substr(0,n) + '/' + lang;
         }

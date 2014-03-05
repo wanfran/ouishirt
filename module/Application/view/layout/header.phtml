@@ -1,26 +1,19 @@
 <?php $session = new \Zend\Session\Container('ouishirt'); ?>
-<?php echo $this->serverUrl(true);  ?>
-<?php  echo $this->ZfcUserLoginWidget(array('redirect' => $session->url)); ?>
-<?php // echo $this->ZfcUserLoginWidget(); ?>
-<?php 
-echo $this->translate("Home", "default", $this->lang_)."<br>";
-echo $this->translate("Test de la mort", "default", $this->lang_)."<br>";
-echo $this->translate("Welcome to OuiShirt", "default", $this->lang_)."<br>";
- ?>
-<?php echo $this->lang_."<br>"; ?>
-<?php echo $this->basePath()."<br>"; ?>
+<?php //echo $this->serverUrl(true);  ?>
+<?php //echo $this->ZfcUserLoginWidget(array('redirect' => $session->url)); ?>
+<?php //echo $this->basePath()."<br>"; ?>
 
       <header>
         <div id="topBar" class="">
           <div class="wrapper clearfix">
-            <p class="left">Vous représentez une cause ou un projet&nbsp;? <a href="#">En savoir plus&nbsp;!</a></p>
+            <p class="left"><?php echo $this->translate("Vous représentez une cause ou un projet ?", "default", $this->lang_) ?> <a href="#"><?php echo $this->translate("En savoir plus !", "default", $this->lang_) ?></a></p>
 
             <div id="languageBox" class="right">
               <?php echo $this->partial('layout/languages.phtml', array(
                     'lang' => array(
-                        'English'  => 'en-US',
-                        'Français' => 'fr-FR',
-                        'Deutsch'  => 'de-DE',
+                        'Français' => 'fr',
+                        'English'  => 'en',
+                        'Deutsch'  => 'de',
                     ),
                     'selected' => $this->lang,
               )); ?>
@@ -28,11 +21,11 @@ echo $this->translate("Welcome to OuiShirt", "default", $this->lang_)."<br>";
             <div id="loginBox" class="right">
               <?php if($this->zfcUserIdentity()): ?>
               <?php echo $this->zfcUserDisplayName() ?>
-              <a href="<?php echo $this->url('user/logout', array('lang' => $this->lang, 'redirect' => $this->serverUrl(true))) ?>">[<?php echo $this->translate('Sign Out'); ?>]</a>
+              <a href="<?php echo $this->url('user/logout', array('lang' => $this->lang, 'redirect' => $this->serverUrl(true))) ?>"><?php echo $this->translate("Déconnexion", "default", $this->lang_) ?></a>
               <?php endif?>
               <?php if(!$this->zfcUserIdentity()): ?>
-              <a href="<?php echo $this->url('user/login', array('lang' => $this->lang)); ?>">Login</a>
-              <a href="<?php echo $this->url('user/register', array('lang' => $this->lang)); ?>">Register</a>
+              <a href="<?php echo $this->url('user/login', array('lang' => $this->lang)); ?>"><?php echo $this->translate("Connexion", "default", $this->lang_) ?></a>
+              <a href="<?php echo $this->url('user/register', array('lang' => $this->lang)); ?>"><?php echo $this->translate("Inscription", "default", $this->lang_) ?></a>
               <?php endif?>
             </div>
           </div>
@@ -40,17 +33,17 @@ echo $this->translate("Welcome to OuiShirt", "default", $this->lang_)."<br>";
         
         <div id="mainBar" class="">
           <div class="wrapper clearfix">
-            <h1 id="logo">ouishirt</h1>
+            <h1 id="logo"><a href="<?php echo $this->url('home', array('lang' => $this->lang)); ?>">OuiShirt</a></h1>
             
             <ul id="nav" class="clearfix">
               <li class="left">
-                <a href="#">Explorer</a>
+                <a href="#"><?php echo $this->translate("Explorer", "default", $this->lang_) ?></a>
               </li>
               <li class="left">
-                <a href="#">Comment ça marche&nbsp;?</a>
+                <a href="#"><?php echo $this->translate("Comment ça marche ?", "default", $this->lang_) ?></a>
               </li>
               <li class="left">
-                <a href="<?php echo $this->url('campaign', array('lang' => $this->lang , 'action' => 'index')); ?>">Campagnes</a>
+                <a href="<?php echo $this->url('campaign', array('lang' => $this->lang , 'action' => 'index')); ?>"><?php echo $this->translate("Campagnes", "default", $this->lang_) ?></a>
               </li>
             </ul>
           </div>

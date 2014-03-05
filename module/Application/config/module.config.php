@@ -16,12 +16,12 @@ return array(
                 'options' => array(
                     'route'    => '/[:lang]',
                     'constraints' => array(
-                        'lang' => '[a-z]{2}(-[A-Z]{2}){0,1}'
+                        'lang' => '[a-z]{2}'
                     ),
                     'defaults' => array(
                         'controller' => 'Application\Controller\Index',
                         'action'     => 'index',
-                        'lang'       => 'fr-FR',
+                        'lang'       => 'fr',
                     ),
                 ),
             ),
@@ -34,7 +34,7 @@ return array(
                 'options' => array(
                     'route'    => '/[:lang]/',
                     'constraints' => array(
-                        'lang' => '[a-z]{2}(-[A-Z]{2}){0,1}'
+                        'lang' => '[a-z]{2}'
                     ),
                     'defaults' => array(
                         '__NAMESPACE__' => 'Application\Controller',

@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -205,12 +205,12 @@ textarea {
 /************************************************************************/
 /*	Sticky Footer
 /************************************************************************/
-/* line 10, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 10, ../../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
 html, body {
   height: 100%;
 }
 
-/* line 12, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 12, ../../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
 #root {
   clear: both;
   min-height: 100%;
@@ -218,12 +218,12 @@ html, body {
   height: 100%;
   margin-bottom: -54px;
 }
-/* line 18, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 18, ../../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
 #root #root_footer {
   height: 54px;
 }
 
-/* line 20, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 20, ../../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
 #footer {
   clear: both;
   position: relative;
@@ -402,7 +402,7 @@ html, body {
 /************************************************************************/
 /*	General styles
 /************************************************************************/
-/* line 14, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_grid.scss */
+/* line 14, ../../../../../Bureau/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_grid.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -426,7 +426,7 @@ body {
   margin-right: auto;
   min-width: 1140px;
 }
-/* line 38, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .wrapper:after {
   content: "";
   display: table;
@@ -599,25 +599,32 @@ h2 strong {
   padding: 0px;
   text-indent: -9999px;
   overflow: hidden;
-  background: url('../img/logo.png?1391252525');
+  background: url('../img/logo.png?1393434575');
 }
-/* line 358, ../sass/screen.scss */
+/* line 357, ../sass/screen.scss */
+#mainBar #logo a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-indent: -9999;
+}
+/* line 365, ../sass/screen.scss */
 #mainBar #nav {
   height: 84px;
   padding: 40px 0px;
   margin: 0px;
 }
-/* line 363, ../sass/screen.scss */
+/* line 370, ../sass/screen.scss */
 #mainBar #nav li {
   margin-right: 30px;
 }
-/* line 366, ../sass/screen.scss */
+/* line 373, ../sass/screen.scss */
 #mainBar #nav li a {
   font-family: "novecento_sans_widedemibold", sans-serif;
   text-transform: lowercase;
   color: #222528;
 }
-/* line 371, ../sass/screen.scss */
+/* line 378, ../sass/screen.scss */
 #mainBar #nav li a:hover {
   color: #0bc0f4;
 }
@@ -625,11 +632,11 @@ h2 strong {
 /************************************************************************/
 /*	Slider
 /************************************************************************/
-/* line 382, ../sass/screen.scss */
+/* line 389, ../sass/screen.scss */
 #slider {
   margin: 30px 0 40px 0;
 }
-/* line 385, ../sass/screen.scss */
+/* line 392, ../sass/screen.scss */
 #slider img {
   width: 100%;
   height: auto;
@@ -641,7 +648,7 @@ h2 strong {
 /************************************************************************/
 /*  Home
 /************************************************************************/
-/* line 400, ../sass/screen.scss */
+/* line 407, ../sass/screen.scss */
 .index #content {
   background: #f2f2f2;
   padding: 50px 0;
@@ -650,22 +657,22 @@ h2 strong {
 /************************************************************************/
 /*	campaignBloc
 /************************************************************************/
-/* line 408, ../sass/screen.scss */
+/* line 415, ../sass/screen.scss */
 .campaignBloc {
   background: #fff;
   overflow: hidden;
   margin-bottom: 1.78571%;
 }
-/* line 413, ../sass/screen.scss */
+/* line 420, ../sass/screen.scss */
 .campaignBloc .campaignImage {
   position: relative;
 }
-/* line 416, ../sass/screen.scss */
+/* line 423, ../sass/screen.scss */
 .campaignBloc .campaignImage img {
   width: 100%;
   height: auto;
 }
-/* line 421, ../sass/screen.scss */
+/* line 428, ../sass/screen.scss */
 .campaignBloc .campaignImage h3 {
   position: absolute;
   bottom: 25px;
@@ -679,31 +686,31 @@ h2 strong {
   text-transform: lowercase;
   font-family: "novecento_sans_widedemibold", sans-serif;
 }
-/* line 435, ../sass/screen.scss */
+/* line 442, ../sass/screen.scss */
 .campaignBloc .campaignImage h3 strong.price {
   margin-left: 30px;
   color: #0bc0f4;
   font-weight: normal;
 }
-/* line 443, ../sass/screen.scss */
+/* line 450, ../sass/screen.scss */
 .campaignBloc .campaignInfos {
   padding: 25px;
   background: #222528;
 }
-/* line 447, ../sass/screen.scss */
+/* line 454, ../sass/screen.scss */
 .campaignBloc .campaignInfos .preOrderQuantity {
   color: #fff;
   font-weight: 600;
   margin-bottom: 0px;
 }
-/* line 452, ../sass/screen.scss */
+/* line 459, ../sass/screen.scss */
 .campaignBloc .campaignInfos .preOrderQuantity strong {
   color: #0bc0f4;
   font-size: 22px;
   margin-right: 5px;
   font-weight: bold;
 }
-/* line 460, ../sass/screen.scss */
+/* line 467, ../sass/screen.scss */
 .campaignBloc .campaignInfos .percentage {
   color: #0bc0f4;
   margin-bottom: 0px;
@@ -711,7 +718,7 @@ h2 strong {
   font-weight: 600;
   font-weight: bold;
 }
-/* line 468, ../sass/screen.scss */
+/* line 475, ../sass/screen.scss */
 .campaignBloc .campaignInfos .progressBar {
   margin: 10px 0px 20px 0;
   height: 16px;
@@ -721,13 +728,13 @@ h2 strong {
   position: relative;
   overflow: hidden;
 }
-/* line 477, ../sass/screen.scss */
+/* line 484, ../sass/screen.scss */
 .campaignBloc .campaignInfos .progressBar .progressValue {
   height: 12px;
   border: 0px solid #101010;
-  background: url('../img/bgProgressBar.png?1393280343') repeat;
+  background: url('../img/bgProgressBar.png?1393434575') repeat;
 }
-/* line 484, ../sass/screen.scss */
+/* line 491, ../sass/screen.scss */
 .campaignBloc .campaignInfos .daysLeft {
   color: #fff;
   font-size: 12px;
@@ -735,9 +742,9 @@ h2 strong {
   line-height: 44px;
   margin: 0px;
   padding-left: 22px;
-  background: url('../img/icon-daysLeft.png?1393280222') no-repeat left 13px;
+  background: url('../img/icon-daysLeft.png?1393434575') no-repeat left 13px;
 }
-/* line 494, ../sass/screen.scss */
+/* line 501, ../sass/screen.scss */
 .campaignBloc .campaignInfos .daysLeft strong {
   color: #0bc0f4;
 }
@@ -745,47 +752,47 @@ h2 strong {
 /************************************************************************/
 /*	Footer
 /************************************************************************/
-/* line 506, ../sass/screen.scss */
+/* line 513, ../sass/screen.scss */
 footer h3 {
   color: #fff;
   font-size: 18px;
   margin: 0 0 15px 0;
 }
-/* line 512, ../sass/screen.scss */
+/* line 519, ../sass/screen.scss */
 footer p, footer a, footer li {
   color: #5b6168;
   font-size: 12px;
   font-weight: 500;
 }
-/* line 518, ../sass/screen.scss */
+/* line 525, ../sass/screen.scss */
 footer li {
   margin-bottom: 8px;
 }
-/* line 521, ../sass/screen.scss */
+/* line 528, ../sass/screen.scss */
 footer li a:hover {
   padding-left: 5px;
 }
-/* line 526, ../sass/screen.scss */
+/* line 533, ../sass/screen.scss */
 footer #preFooter {
   background: #101010;
   padding: 35px 0;
 }
-/* line 531, ../sass/screen.scss */
+/* line 538, ../sass/screen.scss */
 footer #bigFooter {
   background: #222528;
   padding: 35px 0;
 }
-/* line 535, ../sass/screen.scss */
+/* line 542, ../sass/screen.scss */
 footer #bigFooter .widget {
   margin-bottom: 30px;
 }
-/* line 539, ../sass/screen.scss */
+/* line 546, ../sass/screen.scss */
 footer #bigFooter #copyright {
   margin-top: 30px;
   border-top: 2px solid #2b2e30;
   padding: 30px 0 0 0;
 }
-/* line 544, ../sass/screen.scss */
+/* line 551, ../sass/screen.scss */
 footer #bigFooter #copyright p {
   color: #fff;
   text-align: center;
