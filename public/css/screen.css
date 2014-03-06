@@ -649,7 +649,7 @@ h2 strong {
 /*  Home
 /************************************************************************/
 /* line 407, ../sass/screen.scss */
-.index #content {
+.grayBackground {
   background: #f2f2f2;
   padding: 50px 0;
 }

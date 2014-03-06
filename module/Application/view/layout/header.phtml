@@ -8,6 +8,17 @@
           <div class="wrapper clearfix">
             <p class="left"><?php echo $this->translate("Vous représentez une cause ou un projet ?", "default", $this->lang_) ?> <a href="#"><?php echo $this->translate("En savoir plus !", "default", $this->lang_) ?></a></p>
 
+            
+            <div id="loginBox" class="right">
+              <?php if($this->zfcUserIdentity()): ?>
+              <?php echo $this->zfcUserDisplayName() ?>
+              <a href="<?php echo $this->url('user/logout', array('lang' => $this->lang, 'redirect' => $this->serverUrl(true))) ?>"><?php echo $this->translate("Déconnexion", "default", $this->lang_) ?></a>
+              <?php endif?>
+              <?php if(!$this->zfcUserIdentity()): ?>
+              <a href="<?php echo $this->url('user/register', array('lang' => $this->lang)); ?>"><?php echo $this->translate("Inscription", "default", $this->lang_) ?></a>
+              <a href="<?php echo $this->url('user/login', array('lang' => $this->lang)); ?>"><?php echo $this->translate("Connexion", "default", $this->lang_) ?></a>
+              <?php endif?>
+            </div><!-- End loginBox -->
             <div id="languageBox" class="right">
               <?php echo $this->partial('layout/languages.phtml', array(
                     'lang' => array(
@@ -17,19 +28,9 @@
                     ),
                     'selected' => $this->lang,
               )); ?>
-            </div>
-            <div id="loginBox" class="right">
-              <?php if($this->zfcUserIdentity()): ?>
-              <?php echo $this->zfcUserDisplayName() ?>
-              <a href="<?php echo $this->url('user/logout', array('lang' => $this->lang, 'redirect' => $this->serverUrl(true))) ?>"><?php echo $this->translate("Déconnexion", "default", $this->lang_) ?></a>
-              <?php endif?>
-              <?php if(!$this->zfcUserIdentity()): ?>
-              <a href="<?php echo $this->url('user/login', array('lang' => $this->lang)); ?>"><?php echo $this->translate("Connexion", "default", $this->lang_) ?></a>
-              <a href="<?php echo $this->url('user/register', array('lang' => $this->lang)); ?>"><?php echo $this->translate("Inscription", "default", $this->lang_) ?></a>
-              <?php endif?>
-            </div>
-          </div>
-        </div>
+            </div><!-- End languageBox -->
+          </div><!-- End wrapper -->
+        </div><!-- End topBar -->
         
         <div id="mainBar" class="">
           <div class="wrapper clearfix">
@@ -45,7 +46,10 @@
               <li class="left">
                 <a href="<?php echo $this->url('campaign', array('lang' => $this->lang , 'action' => 'index')); ?>"><?php echo $this->translate("Campagnes", "default", $this->lang_) ?></a>
               </li>
-            </ul>
-          </div>
-        </div>
+              <li class="right">
+                <a href="<?php echo $this->url('campaign/add', array('lang' => $this->lang)); ?>"><?php echo $this->translate("Créer une campagne", "default", $this->lang_) ?></a>
+              </li>
+            </ul><!-- End nav -->
+          </div><!-- End wrapper -->
+        </div><!-- End mainBar -->
       </header>

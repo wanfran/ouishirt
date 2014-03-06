@@ -1,34 +1,47 @@
 <?php 
 return array(
-     'controllers' => array(
-         'invokables' => array(
-             'Campaign\Controller\Campaign' => 'Campaign\Controller\CampaignController',
-         ),
-     ),
+    'controllers' => array(
+        'invokables' => array(
+            'Campaign\Controller\Campaign' => 'Campaign\Controller\CampaignController',
+        ),
+    ),
 
-     'router' => array(
+    'router' => array(
         'router_class' => 'Zend\Mvc\Router\Http\TranslatorAwareTreeRouteStack',
-         'routes' => array(
-             'campaign' => array(
-                 'type'    => 'segment',
-                 'options' => array(
-                     'route'    => '[/:lang]/campaign[/]',
-                     'constraints' => array(
+        'routes' => array(
+            'campaign' => array(
+                'type'    => 'segment',
+                'options' => array(
+                    'route'    => '[/:lang]/campaign[/]',
+                    'constraints' => array(
                         'lang' => '[a-z]{2}(-[A-Z]{2}){0,1}'
                     ),
-                     'defaults' => array(
-                         'controller' => 'Campaign\Controller\Campaign',
-                         'action'     => 'index',
-                     ),
-                 ),
-             ),
-         ),
-     ),
+                    'defaults' => array(
+                        'controller' => 'Campaign\Controller\Campaign',
+                        'action'     => 'index',
+                    ),
+                ),
+                'may_terminate' => true,
+                'child_routes' => array(
+                    'add' => array(
+                        'type' => 'segment',
+                        'options' => array(
+                            'route' => 'add',
+                            'defaults' => array(
+                                'controller' => 'Campaign\Controller\Campaign',
+                                'action'     => 'add',
+                            ),
+                        ),
+                    ),
+                ),
+            ),
+        ),
+    ),
 
-     'view_manager' => array(
-         'template_path_stack' => array(
-             'campaign' => __DIR__ . '/../view',
-         ),
-     ),
- );
- ?>
+    'view_manager' => array(
+        'template_path_stack' => array(
+            'campaign' => __DIR__ . '/../view',
+        ),
+    ),
+);
+?>

@@ -1,0 +1,40 @@
+<?php  
+
+//CSS
+$this->headLink()	->appendStylesheet($this->basePath() . '/css/vendor/fancy/plugins.min.css')
+					->appendStylesheet($this->basePath() . '/css/vendor/fancy/jquery.fancyProductDesigner.css')
+					->appendStylesheet($this->basePath() . '/css/vendor/fancy/jquery.fancyProductDesigner-fonts.css')
+					->appendStylesheet('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css')
+					;        
+//JS
+$this->headScript()->prependFile($this->basePath() . '/js/vendor/fancy/fabric.js')
+					->prependFile($this->basePath() . '/js/vendor/fancy/plugins.min.js')
+					->prependFile($this->basePath() . '/js/vendor/fancy/webfont.js')
+					->prependFile($this->basePath() . '/js/vendor/fancy/jquery.fancyProductDesigner.min.js')
+					->prependFile($this->basePath() . '/js/vendor/fancy/jspdf.min.js')
+            		;
+
+?>
+
+<div class="campaignAdd">
+	<section id="content" class="grayBackground">
+		<div class="wrapper">
+			<div id="campaignStatus">
+				<p>test</p>
+			</div><!-- End campaignStatus -->
+			<div id="campaignConfig">
+				<div id="configDesign">
+					<h2>Choix du t-shirt</h2>
+
+				</div><!-- End configDesign -->
+				<div id="configGoal">
+				</div><!-- End configGoal -->
+				<div id="configCampaign">
+				</div><!-- End configCampaign -->
+			</div><!-- End campaignConfig -->
+			<div id="campaignDesign">
+			</div><!-- End campaignDesign -->
+		</div><!-- End wrapper -->
+	</section><!-- End content -->
+
+</div><!-- End campaignAdd -->
