@@ -55,7 +55,7 @@
 		resizeIcon.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RkY3RjhCMTI0NENEMTFFMzlDNTlBQzY1MzlBMkNBNzMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RkY3RjhCMTM0NENEMTFFMzlDNTlBQzY1MzlBMkNBNzMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCQ0YzNUZENzQ0Q0ExMUUzOUM1OUFDNjUzOUEyQ0E3MyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpCQ0YzNUZEODQ0Q0ExMUUzOUM1OUFDNjUzOUEyQ0E3MyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pj7soO0AAAG9SURBVHjalFM9awJBEJ07TwstlPMKL4WFVlEsU5lGEMHKQizSSSBlmoA/wH+QP2AlhBSptLESBCtJIyqCH6BgETwFNeeBH+dmdskdhiR3yYMtdnf2zbw3s1y32wVEwOPx3DmdzjBBgAU4juN1XV9ut9un0+n0CkggK4rSIv8APiSqqir9fv9acLvdt5IkXU0mE2g0GsDzPOz3e/D5fJDJZEAQhJ+qAKxYwpgHvBcC9LDZbEI+n2cBsixDuVwGh8NhpYaSizxWpNONy+UyL7AiiEajLJMVqBre2GiaBsFgENLpNHQ6HYjH49But8EOJoEoilAqlaBarUIymYTpdArL5dKWgAY+Gs4aWCwWpNWyb8x8Pq8L584a8Pv9bJ0DE7AO/SrBCrVaDRKJBIxGI7Yfj8es1SypIcFqaHK5HJ1OEolESKVSIalUiux2O4Ie1W0JKFarFclms4yErnCYTTwj4P8iw+v1QqFQMAcL/4JpgYBE73YEw+EQisUixGIxOjwQCoUMYzXo9XqXm83mzUrC4XAgx+PxyxmaSAaDwQ2toD+bzdJY5j3O9sWnzm+f56zNHGZW1+v1M5K8fAgwAKZZlVqllD6aAAAAAElFTkSuQmCC';
 
 
-		$elem = $(elem).addClass('fpd-container fpd-clearfix');
+		$elem = $(elem).addClass('fpd-clearfix');
 		$products = $elem.children('.fpd-product').remove();
 		$designs = $elem.children('.fpd-design');
 
@@ -85,9 +85,9 @@
 		//load sidebar html
 		$.post(options.templatesDirectory+'sidebar.php',
 			function(html){
-				$elem.append($.parseHTML(html));
+				//$elem.append($.parseHTML(html));
 
-				$sidebar = $elem.children('.fpd-sidebar');
+				$sidebar = $elem.find('.fpd-sidebar');
 				$sidebarNavi = $sidebar.children('.fpd-navigation');
 				$sidebarContent = $sidebar.children('.fpd-content');
 				$toolbar = $sidebarContent.find('.fpd-toolbar');
@@ -111,9 +111,9 @@
 				//load product stage html
 				$.post(options.templatesDirectory+'productstage.php',
 					function(html){
-						$elem.append($.parseHTML(html));
+						//$elem.append($.parseHTML(html));
 
-						$productContainer = $elem.children('.fpd-product-container')
+						$productContainer = $elem.find('.fpd-product-container')
 						.css({width: options.dimensions.productStageWidth});
 
 						$productContainer.children('.fpd-product-stage').height(options.dimensions.productStageHeight);
@@ -2298,7 +2298,7 @@
 			degree: 0, //the degree for the rotation
 			price: 0, //how much does the element cost
 			boundingBox: false, //false, an element by title or an object with x,y,width,height
-			autoCenter: false, //when the element is added to stage, center it automatically
+			autoCenter: true, //when the element is added to stage, center it automatically
 			font: false, //Only for text elements. If false it will use the font from the defaultFont option or set a font name from the fonts array
 			textSize: 18, //Only for text elements.
 			patternable: false, //Only for text elements. User can choose a pattern for the text element
@@ -2327,10 +2327,10 @@
 		defaultFont: false, //if false, it will choose the first font from the fonts dropdown. If you would like to choose one from the list, set the font name.
 		dimensions: {
 			sidebarNavWidth: 50,
-			sidebarContentWidth: 200,
-			sidebarHeight: 650,
-			productStageWidth: 600,
-			productStageHeight: 600
+			sidebarContentWidth: '',
+			sidebarHeight: '',
+			productStageWidth: 740,
+			productStageHeight: 700
 		},//the dimensions for the product designer
 		facebookAppId: '', //to add photos from facebook, you have to set your own facebook api key
 		phpDirectory: 'php/', //the path to the directory that contains php scripts that are used for some functions of the plugin

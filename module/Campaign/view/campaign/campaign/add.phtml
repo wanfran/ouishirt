@@ -1,3 +1,7 @@
+
+
+
+
 <?php  
 
 //CSS
@@ -5,34 +9,40 @@ $this->headLink()	->appendStylesheet($this->basePath() . '/css/vendor/fancy/plug
 					->appendStylesheet($this->basePath() . '/css/vendor/fancy/jquery.fancyProductDesigner.css')
 					->appendStylesheet($this->basePath() . '/css/vendor/fancy/jquery.fancyProductDesigner-fonts.css')
 					->appendStylesheet('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css')
+					->appendStylesheet($this->basePath() . '/css/vendor/fancy/overwrite.css')
 					;        
 //JS
-$this->headScript()->prependFile($this->basePath() . '/js/vendor/fancy/fabric.js')
-					->prependFile($this->basePath() . '/js/vendor/fancy/plugins.min.js')
+$this->headScript()//->prependFile($this->basePath() . '/js/vendor/fancy/jspdf.min.js') //PDF
+					->prependFile($this->basePath() . '/js/vendor/fancy/jquery.fancyProductDesigner.js')
 					->prependFile($this->basePath() . '/js/vendor/fancy/webfont.js')
-					->prependFile($this->basePath() . '/js/vendor/fancy/jquery.fancyProductDesigner.min.js')
-					->prependFile($this->basePath() . '/js/vendor/fancy/jspdf.min.js')
+					->prependFile($this->basePath() . '/js/vendor/fancy/plugins.min.js')
+					->prependFile($this->basePath() . '/js/vendor/fancy/fabric.js')
+					
             		;
+
+$this->inlineScript()   ->prependFile($this->basePath('/js/campaign.js'))
+
 
 ?>
 
-<div class="campaignAdd">
+<div class="campaignAdd" id="ouishirtDesigner">
+	<?php echo $this->partial('campaign/partial/products.phtml'); ?>
 	<section id="content" class="grayBackground">
 		<div class="wrapper">
 			<div id="campaignStatus">
-				<p>test</p>
 			</div><!-- End campaignStatus -->
-			<div id="campaignConfig">
-				<div id="configDesign">
-					<h2>Choix du t-shirt</h2>
-
+			<div id="campaignConfig" class="col4">
+				<div id="configDesign" class="fpd-sidebar fpd-border-color fpd-clearfix">
+					<?php echo $this->partial('campaign/partial/sidebar.phtml'); ?>
+				</div>
 				</div><!-- End configDesign -->
 				<div id="configGoal">
 				</div><!-- End configGoal -->
 				<div id="configCampaign">
 				</div><!-- End configCampaign -->
 			</div><!-- End campaignConfig -->
-			<div id="campaignDesign">
+			<div id="campaignDesign" class="fpd-product-container col8 omega">
+				<?php echo $this->partial('campaign/partial/design.phtml'); ?>
 			</div><!-- End campaignDesign -->
 		</div><!-- End wrapper -->
 	</section><!-- End content -->

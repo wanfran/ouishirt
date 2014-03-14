@@ -1,0 +1,23 @@
+.fpd-sidebar > div{
+	float: none;
+}
+.fpd-sidebar > .fpd-content > div{
+	display: block;
+}
+.fpd-content-color, .fpd-tooltip-theme{
+	background: none;
+}
+.fpd-tooltip-theme{
+	background: #fff;
+}
+.fpd-sidebar > div{
+	height: initial;
+}
+.fpd-content > div, .fpd-content > div > ul{
+	overflow: initial;
+}
+.fpd-content > div > ul > li{
+	width: 33%;
+	height: 110px;
+	border: none;
+}
