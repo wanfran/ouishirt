@@ -29,10 +29,8 @@ if (strpos($currentUrl, 'login') == false AND strpos($currentUrl, 'register') ==
 
         <!-- Styles -->
         <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
-                        ->prependStylesheet($this->basePath() . '/css/print.css')
-                        ->prependStylesheet($this->basePath() . '/css/responsive.css')
-                        ->prependStylesheet($this->basePath() . '/css/retina.css')
                         ->prependStylesheet($this->basePath() . '/css/screen.css', 'screen, projection')
+                        //->prependStylesheet($this->basePath() . '/css/vendor/jquery.ui.css') 
                         ->prependStylesheet($this->basePath() . '/css/normalize.min.css') ?>
 
         <!-- Scripts -->
@@ -58,6 +56,8 @@ if (strpos($currentUrl, 'login') == false AND strpos($currentUrl, 'register') ==
         <?php 
             echo $this->inlineScript()->prependFile($this->basePath('js/plugins.js'))
                                       ->prependFile($this->basePath('js/main.js'))
+                                      ->prependFile($this->basePath('js/vendor/jquery-ui.min.js'))
+
          ;?>
 
         <script>

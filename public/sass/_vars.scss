@@ -1,0 +1,37 @@
+
+/************************************************************************/
+/*	Sticky Footer
+/************************************************************************/
+@include sticky-footer(54px);
+
+/************************************************************************/
+/*	Colors Vars                                                          
+/************************************************************************/
+$featured-color: #0bc0f4;
+$links-color: #ee3e52;
+$links-hover-color: #ff576b;
+$darkGray: #222528;
+$lightGray: #5b6168;
+$gray: #f2f2f2;
+$redAlert: #ee2c3a;
+
+
+
+/************************************************************************/
+/*	Susy Vars
+/************************************************************************/
+$total-columns: 12;
+$column-width: 75px;
+$gutter-width: 20px;
+$grid-padding: 10px;
+
+$container-style: magic; // default to magic. Switch to fluid or fixed if desired
+
+
+/************************************************************************/
+/*	Transition Default
+/************************************************************************/
+$default-transition-property : all;
+$default-transition-duration : .3s;
+$default-transition-function : ease;
+$default-transition-delay    : false;

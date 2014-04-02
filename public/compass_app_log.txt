@@ -45,3 +45,274 @@
 2014-03-05 14:09:55 identical css/retina.css 
 2014-03-05 14:09:56 identical css/screen.css 
 2014-03-06 08:18:52 overwrite css/screen.css 
+2014-04-02 00:38:00    create css/fonts.css 
+2014-04-02 00:38:00     error sass/grid.scss (Line 5: Undefined mixin 'span-columns'.)
+2014-04-02 00:38:00 overwrite css/grid.css 
+2014-04-02 00:38:00     error sass/home.scss (Line 23: Undefined variable: "$gray".)
+2014-04-02 00:38:00    create css/home.css 
+2014-04-02 00:38:00     error sass/layout.scss (Line 5: Undefined mixin 'border-box-sizing'.)
+2014-04-02 00:38:00    create css/layout.css 
+2014-04-02 00:38:01 overwrite css/screen.css 
+2014-04-02 00:38:01     error sass/vars.scss (Line 5: Undefined mixin 'sticky-footer'.)
+2014-04-02 00:38:01    create css/vars.css 
+2014-04-02 00:44:37 identical css/screen.css 
+2014-04-02 00:45:16    create css/ie.css 
+2014-04-02 00:45:40 overwrite css/screen.css 
+2014-04-02 01:51:19 identical css/screen.css 
+2014-04-02 01:51:42 overwrite css/screen.css 
+2014-04-02 01:52:02 overwrite css/screen.css 
+2014-04-02 04:32:46     error sass/screen.scss (Line 17: File to import not found or unreadable: campaignadd.
+Load paths:
+  E:/wamp/www/ouishirt/public/sass
+  E:/Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  E:/Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  E:/Bureau/compass.app/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets
+  E:/Bureau/compass.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets
+  E:/Bureau/compass.app/lib/ruby/compass_extensions/compass-normalize-1.4.3/stylesheets
+  E:/Bureau/compass.app/lib/ruby/compass_extensions/bootstrap-sass-2.3.2.1/vendor/assets/stylesheets
+  E:/Bureau/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass
+  E:/Bureau/compass.app/lib/ruby/compass_extensions/zurb-foundation-4.3.1/scss
+  Compass::SpriteImporter
+  E:/Bureau/vendor/assets/stylesheets)
+2014-04-02 04:32:46 overwrite css/screen.css 
+2014-04-02 04:33:19 overwrite css/screen.css 
+2014-04-02 04:41:39 overwrite css/screen.css 
+2014-04-02 04:42:51 overwrite css/screen.css 
+2014-04-02 04:43:09 identical css/screen.css 
+2014-04-02 04:43:57 overwrite css/screen.css 
+2014-04-02 04:44:02 overwrite css/screen.css 
+2014-04-02 04:44:53 overwrite css/screen.css 
+2014-04-02 04:45:58     error sass/screen.scss (Line 18 of sass/_campaignAdd.scss: Invalid CSS after "			background": expected ";", was ": #ee3e52;")
+2014-04-02 04:45:58 overwrite css/screen.css 
+2014-04-02 04:46:06 overwrite css/screen.css 
+2014-04-02 04:46:25 overwrite css/screen.css 
+2014-04-02 04:48:51 overwrite css/screen.css 
+2014-04-02 04:49:08 overwrite css/screen.css 
+2014-04-02 04:49:19 overwrite css/screen.css 
+2014-04-02 04:49:48 overwrite css/screen.css 
+2014-04-02 04:49:58 overwrite css/screen.css 
+2014-04-02 04:50:20 overwrite css/screen.css 
+2014-04-02 04:50:32 overwrite css/screen.css 
+2014-04-02 04:50:45 overwrite css/screen.css 
+2014-04-02 04:50:56 overwrite css/screen.css 
+2014-04-02 04:51:02 overwrite css/screen.css 
+2014-04-02 04:51:12 overwrite css/screen.css 
+2014-04-02 04:51:43 overwrite css/screen.css 
+2014-04-02 04:51:47 overwrite css/screen.css 
+2014-04-02 04:52:06 overwrite css/screen.css 
+2014-04-02 04:52:14 overwrite css/screen.css 
+2014-04-02 04:52:24 overwrite css/screen.css 
+2014-04-02 04:55:19 overwrite css/screen.css 
+2014-04-02 04:55:34 overwrite css/screen.css 
+2014-04-02 04:56:04 overwrite css/screen.css 
+2014-04-02 04:56:13 overwrite css/screen.css 
+2014-04-02 04:57:28 identical css/screen.css 
+2014-04-02 04:57:42 overwrite css/screen.css 
+2014-04-02 04:58:19 overwrite css/screen.css 
+2014-04-02 04:58:48 overwrite css/screen.css 
+2014-04-02 04:58:56 overwrite css/screen.css 
+2014-04-02 04:59:02 overwrite css/screen.css 
+2014-04-02 04:59:12 overwrite css/screen.css 
+2014-04-02 04:59:26 overwrite css/screen.css 
+2014-04-02 04:59:37 overwrite css/screen.css 
+2014-04-02 04:59:45 overwrite css/screen.css 
+2014-04-02 05:00:08 overwrite css/screen.css 
+2014-04-02 05:01:14 overwrite css/screen.css 
+2014-04-02 05:01:28 overwrite css/screen.css 
+2014-04-02 05:01:33 overwrite css/screen.css 
+2014-04-02 05:01:54 overwrite css/screen.css 
+2014-04-02 05:02:05 overwrite css/screen.css 
+2014-04-02 05:02:14 overwrite css/screen.css 
+2014-04-02 05:02:24 overwrite css/screen.css 
+2014-04-02 05:02:28 overwrite css/screen.css 
+2014-04-02 05:02:35 overwrite css/screen.css 
+2014-04-02 05:02:41 overwrite css/screen.css 
+2014-04-02 05:02:55 overwrite css/screen.css 
+2014-04-02 05:03:05 overwrite css/screen.css 
+2014-04-02 05:03:10 overwrite css/screen.css 
+2014-04-02 05:03:35 overwrite css/screen.css 
+2014-04-02 05:04:16 overwrite css/screen.css 
+2014-04-02 05:04:27 overwrite css/screen.css 
+2014-04-02 05:04:34 overwrite css/screen.css 
+2014-04-02 05:05:36 overwrite css/screen.css 
+2014-04-02 05:05:51 overwrite css/screen.css 
+2014-04-02 05:06:44 overwrite css/screen.css 
+2014-04-02 05:06:51 overwrite css/screen.css 
+2014-04-02 05:07:06 overwrite css/screen.css 
+2014-04-02 05:08:00 overwrite css/screen.css 
+2014-04-02 05:08:20 overwrite css/screen.css 
+2014-04-02 05:09:03     error sass/screen.scss (Line 19 of sass/_campaignAdd.scss: Invalid CSS after "			background": expected ";", was ": #ee3e52;")
+2014-04-02 05:09:03 overwrite css/screen.css 
+2014-04-02 05:09:16 overwrite css/screen.css 
+2014-04-02 05:13:41 overwrite css/screen.css 
+2014-04-02 05:15:32 overwrite css/screen.css 
+2014-04-02 05:15:41 overwrite css/screen.css 
+2014-04-02 05:15:44 identical css/screen.css 
+2014-04-02 05:16:02 overwrite css/screen.css 
+2014-04-02 05:16:36 overwrite css/screen.css 
+2014-04-02 05:16:46 overwrite css/screen.css 
+2014-04-02 05:17:13 overwrite css/screen.css 
+2014-04-02 05:18:03     error sass/screen.scss (Line 81 of sass/_campaignAdd.scss: Undefined variable: "$grey".)
+2014-04-02 05:18:03 overwrite css/screen.css 
+2014-04-02 05:18:08     error sass/screen.scss (Line 81 of sass/_campaignAdd.scss: Undefined variable: "$grey".)
+2014-04-02 05:18:08 identical css/screen.css 
+2014-04-02 05:18:18 overwrite css/screen.css 
+2014-04-02 05:18:58 overwrite css/screen.css 
+2014-04-02 05:19:16 overwrite css/screen.css 
+2014-04-02 05:19:35 overwrite css/screen.css 
+2014-04-02 05:20:07 overwrite css/screen.css 
+2014-04-02 05:20:21 overwrite css/screen.css 
+2014-04-02 05:21:03 overwrite css/screen.css 
+2014-04-02 05:21:58 overwrite css/screen.css 
+2014-04-02 05:22:03 identical css/screen.css 
+2014-04-02 05:22:33 overwrite css/screen.css 
+2014-04-02 05:23:13 overwrite css/screen.css 
+2014-04-02 05:23:40 overwrite css/screen.css 
+2014-04-02 05:24:33 overwrite css/screen.css 
+2014-04-02 05:24:48 overwrite css/screen.css 
+2014-04-02 05:29:07 overwrite css/screen.css 
+2014-04-02 05:32:15     error sass/screen.scss (Line 95 of sass/_campaignAdd.scss: Invalid CSS after "			background:": expected expression (e.g. 1px, bold), was "}")
+2014-04-02 05:32:15 overwrite css/screen.css 
+2014-04-02 05:32:26 overwrite css/screen.css 
+2014-04-02 05:32:39 overwrite css/screen.css 
+2014-04-02 05:32:47 overwrite css/screen.css 
+2014-04-02 05:33:04 overwrite css/screen.css 
+2014-04-02 05:33:21 overwrite css/screen.css 
+2014-04-02 05:33:36 overwrite css/screen.css 
+2014-04-02 05:33:38 overwrite css/screen.css 
+2014-04-02 05:33:46 overwrite css/screen.css 
+2014-04-02 05:34:17 overwrite css/screen.css 
+2014-04-02 05:34:53 overwrite css/screen.css 
+2014-04-02 05:37:20 overwrite css/screen.css 
+2014-04-02 05:37:28 overwrite css/screen.css 
+2014-04-02 05:37:36 overwrite css/screen.css 
+2014-04-02 05:37:51 overwrite css/screen.css 
+2014-04-02 05:38:11 overwrite css/screen.css 
+2014-04-02 05:38:18 overwrite css/screen.css 
+2014-04-02 05:41:21 overwrite css/screen.css 
+2014-04-02 05:52:23 overwrite css/screen.css 
+2014-04-02 05:54:05     error sass/screen.scss (Line 117 of sass/_campaignAdd.scss: Invalid CSS after "		background: ": expected expression (e.g. 1px, bold), was "##222528;")
+2014-04-02 05:54:05 overwrite css/screen.css 
+2014-04-02 05:54:12 overwrite css/screen.css 
+2014-04-02 05:54:43 overwrite css/screen.css 
+2014-04-02 05:54:52 overwrite css/screen.css 
+2014-04-02 05:55:17 identical css/screen.css 
+2014-04-02 05:56:17 overwrite css/screen.css 
+2014-04-02 05:59:26     error sass/screen.scss (Line 23 of sass/_vars.scss: Invalid CSS after "$total-columns": expected selector or at-rule, was ": 12;")
+2014-04-02 05:59:26 overwrite css/screen.css 
+2014-04-02 05:59:37     error sass/screen.scss (Line 23 of sass/_vars.scss: Invalid CSS after "$total-columns": expected selector or at-rule, was ": 12;")
+2014-04-02 05:59:37 identical css/screen.css 
+2014-04-02 06:00:10     error sass/screen.scss (Line 23 of sass/_vars.scss: Invalid CSS after "$total-columns": expected selector or at-rule, was ": 12;")
+2014-04-02 06:00:10 identical css/screen.css 
+2014-04-02 06:00:23 overwrite css/screen.css 
+2014-04-02 06:01:06 overwrite css/screen.css 
+2014-04-02 06:02:00 overwrite css/screen.css 
+2014-04-02 06:02:02 overwrite css/screen.css 
+2014-04-02 06:02:27 overwrite css/screen.css 
+2014-04-02 06:02:29 identical css/screen.css 
+2014-04-02 06:03:15 overwrite css/screen.css 
+2014-04-02 06:03:46 overwrite css/screen.css 
+2014-04-02 06:03:51 overwrite css/screen.css 
+2014-04-02 06:05:10     error sass/screen.scss (Line 72 of sass/_campaignAdd.scss: Invalid CSS after "			z-index: ": expected expression (e.g. 1px, bold), was ":-1;")
+2014-04-02 06:05:10 overwrite css/screen.css 
+2014-04-02 06:05:12 overwrite css/screen.css 
+2014-04-02 06:05:24 overwrite css/screen.css 
+2014-04-02 06:05:35 overwrite css/screen.css 
+2014-04-02 06:05:56 overwrite css/screen.css 
+2014-04-02 06:06:45 overwrite css/screen.css 
+2014-04-02 07:12:35 overwrite css/screen.css 
+2014-04-02 07:12:41 identical css/screen.css 
+2014-04-02 07:47:05 overwrite css/screen.css 
+2014-04-02 07:47:30 overwrite css/screen.css 
+2014-04-02 07:48:01 overwrite css/screen.css 
+2014-04-02 07:48:18 overwrite css/screen.css 
+2014-04-02 07:48:28 overwrite css/screen.css 
+2014-04-02 07:48:36 overwrite css/screen.css 
+2014-04-02 07:49:25 overwrite css/screen.css 
+2014-04-02 07:50:55 overwrite css/screen.css 
+2014-04-02 07:52:25 overwrite css/screen.css 
+2014-04-02 07:53:23 overwrite css/screen.css 
+2014-04-02 07:53:55 overwrite css/screen.css 
+2014-04-02 07:54:01 overwrite css/screen.css 
+2014-04-02 07:55:22 overwrite css/screen.css 
+2014-04-02 07:56:06 overwrite css/screen.css 
+2014-04-02 08:05:05 overwrite css/screen.css 
+2014-04-02 08:06:48 overwrite css/screen.css 
+2014-04-02 08:07:19 overwrite css/screen.css 
+2014-04-02 08:08:28 overwrite css/screen.css 
+2014-04-02 08:08:31 overwrite css/screen.css 
+2014-04-02 08:09:04 overwrite css/screen.css 
+2014-04-02 08:09:25 identical css/screen.css 
+2014-04-02 08:10:10 overwrite css/screen.css 
+2014-04-02 08:10:39 overwrite css/screen.css 
+2014-04-02 08:13:10 overwrite css/screen.css 
+2014-04-02 08:14:59 overwrite css/screen.css 
+2014-04-02 08:15:12 overwrite css/screen.css 
+2014-04-02 08:21:35     error sass/screen.scss (Line 94 of sass/_campaignAdd.scss: Invalid CSS after "		$": expected identifier, was ":nth-child(n+1){")
+2014-04-02 08:21:35 overwrite css/screen.css 
+2014-04-02 08:21:53     error sass/screen.scss (Line 94 of sass/_campaignAdd.scss: Invalid CSS after "		$": expected identifier, was ":nth-child(n+1){")
+2014-04-02 08:21:53 identical css/screen.css 
+2014-04-02 08:22:39     error sass/screen.scss (Line 95 of sass/_campaignAdd.scss: Invalid CSS after "			margin-top20px": expected "{", was ";")
+2014-04-02 08:22:39 overwrite css/screen.css 
+2014-04-02 08:23:01 overwrite css/screen.css 
+2014-04-02 08:24:13 overwrite css/screen.css 
+2014-04-02 08:24:26 overwrite css/screen.css 
+2014-04-02 08:24:57 overwrite css/screen.css 
+2014-04-02 08:25:25 overwrite css/screen.css 
+2014-04-02 08:28:35     error sass/screen.scss (Line 174 of sass/_campaignAdd.scss: Undefined variable: "$darkGrey".)
+2014-04-02 08:28:35 overwrite css/screen.css 
+2014-04-02 08:28:51 overwrite css/screen.css 
+2014-04-02 08:29:32 overwrite css/screen.css 
+2014-04-02 08:30:06     error sass/screen.scss (Line 179 of sass/_campaignAdd.scss: Invalid CSS after "				color: ": expected expression (e.g. 1px, bold), was "$$featured-color;")
+2014-04-02 08:30:06 overwrite css/screen.css 
+2014-04-02 08:30:08 overwrite css/screen.css 
+2014-04-02 08:30:23 overwrite css/screen.css 
+2014-04-02 08:30:57 overwrite css/screen.css 
+2014-04-02 08:31:22 overwrite css/screen.css 
+2014-04-02 08:31:36 overwrite css/screen.css 
+2014-04-02 08:31:40 overwrite css/screen.css 
+2014-04-02 08:31:58 overwrite css/screen.css 
+2014-04-02 08:32:14 overwrite css/screen.css 
+2014-04-02 08:32:36 overwrite css/screen.css 
+2014-04-02 08:33:11 overwrite css/screen.css 
+2014-04-02 08:34:23 overwrite css/screen.css 
+2014-04-02 08:34:49 overwrite css/screen.css 
+2014-04-02 08:36:12 overwrite css/screen.css 
+2014-04-02 08:36:40 overwrite css/screen.css 
+2014-04-02 08:36:54 overwrite css/screen.css 
+2014-04-02 08:37:40 overwrite css/screen.css 
+2014-04-02 08:37:51 overwrite css/screen.css 
+2014-04-02 08:37:53     error sass/screen.scss (Line 195 of sass/_campaignAdd.scss: Undefined variable: "$lightGrae".)
+2014-04-02 08:37:53 overwrite css/screen.css 
+2014-04-02 08:37:58     error sass/screen.scss (Line 195 of sass/_campaignAdd.scss: Undefined variable: "$lightGrey".)
+2014-04-02 08:37:58 overwrite css/screen.css 
+2014-04-02 08:38:07 overwrite css/screen.css 
+2014-04-02 08:38:36 overwrite css/screen.css 
+2014-04-02 08:38:41 overwrite css/screen.css 
+2014-04-02 08:39:16 overwrite css/screen.css 
+2014-04-02 08:40:09 overwrite css/screen.css 
+2014-04-02 08:40:20 overwrite css/screen.css 
+2014-04-02 08:49:10 overwrite css/screen.css 
+2014-04-02 08:50:30 overwrite css/screen.css 
+2014-04-02 08:50:58 overwrite css/screen.css 
+2014-04-02 08:51:03 overwrite css/screen.css 
+2014-04-02 08:51:25 overwrite css/screen.css 
+2014-04-02 08:52:20 overwrite css/screen.css 
+2014-04-02 08:52:43 overwrite css/screen.css 
+2014-04-02 09:13:17 overwrite css/screen.css 
+2014-04-02 09:29:56 overwrite css/screen.css 
+2014-04-02 09:31:06 overwrite css/screen.css 
+2014-04-02 09:31:20 overwrite css/screen.css 
+2014-04-02 09:31:37 overwrite css/screen.css 
+2014-04-02 09:34:16 overwrite css/screen.css 
+2014-04-02 09:34:45 overwrite css/screen.css 
+2014-04-02 09:45:45 overwrite css/screen.css 
+2014-04-02 12:54:12 overwrite css/screen.css 
+2014-04-02 13:03:17 overwrite css/screen.css 
+2014-04-02 13:03:37 overwrite css/screen.css 
+2014-04-02 13:04:03 overwrite css/screen.css 
+2014-04-02 13:04:28 overwrite css/screen.css 
+2014-04-02 13:04:39 overwrite css/screen.css 
+2014-04-02 13:05:00 overwrite css/screen.css 
+2014-04-02 13:05:12 overwrite css/screen.css 
+2014-04-02 22:12:53 overwrite css/screen.css 

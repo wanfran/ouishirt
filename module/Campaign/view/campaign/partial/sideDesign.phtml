@@ -43,24 +43,30 @@ $saved_products_headline = 'Your Saved Products';
 					<h2>Choix du vêtement</h2>
 					<div class="fpd-content fpd-content-color">
 						<!-- Products -->
+						<h3>Choisissez le produit</h3>
 						<div class="fpd-products">
 							<ul class="fpd-clearfix"></ul>
 						</div>
-						<!-- Edit text -->
-						<div class="fpd-custom-text">
-							<h3><?php echo $custom_text_headline; ?></h3>
-							<textarea class="fpd-text-input fpd-textarea"><?php echo $custom_text_placeholder; ?></textarea>
-							<button class="fpd-button-submit fpd-button fpd-submit "><?php echo $custom_text_button; ?></button>
-						</div>
-						<!-- Upload design -->
-						<div class="fpd-upload-designs">
-							<h3><?php echo $upload_design_headline; ?></h3>
-							<p><?php echo $upload_design_info; ?></p>
-							<button class="fpd-button-submit fpd-button fpd-submit"><?php echo $upload_design_button; ?></button>
-							<form class="fpd-upload-form" style="display: none;">
-								<input type="file" class="fpd-input-design" name="uploaded_file"  />
-							</form>
-						</div>
+						<span class="infoMsg">Attention, si vous changez de produit, votre design disparaîtra</span>
+						<!-- Add elements -->	
+
+							<!-- Edit text -->
+							<div class="fpd-custom-text">
+								<h3><?php echo $custom_text_headline; ?></h3>
+								<textarea class="fpd-text-input fpd-textarea"><?php echo $custom_text_placeholder; ?></textarea>
+								<button class="fpd-button-submit fpd-button fpd-submit "><?php echo $custom_text_button; ?></button>
+							</div>
+							<!-- Upload design -->
+							<div class="fpd-upload-designs">
+								<h3><?php echo $upload_design_headline; ?></h3>
+								<p><?php echo $upload_design_info; ?></p>
+								<button class="fpd-button-submit fpd-button fpd-submit"><?php echo $upload_design_button; ?></button>
+								<form class="fpd-upload-form" style="display: none;">
+									<input type="file" class="fpd-input-design" name="uploaded_file"  />
+								</form>
+							</div>
+			
+
 						<!-- Edit elements -->
 						<div class="fpd-edit-elements">
 							<h3><?php echo $edit_elements_headline; ?></h3>
@@ -99,4 +105,6 @@ $saved_products_headline = 'Your Saved Products';
 								</div>
 							</div>
 						</div>
+					</div>
+					<div class="nextStep1 btn1">Etape suivante</div>
 					

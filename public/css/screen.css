@@ -70,7 +70,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /************************************************************************/
 /*	HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
 /************************************************************************/
-/* line 9, ../sass/boilerplate.scss */
+/* line 9, ../sass/_boilerplate.scss */
 html,
 button,
 input,
@@ -79,25 +79,25 @@ textarea {
   color: #222;
 }
 
-/* line 13, ../sass/boilerplate.scss */
+/* line 13, ../sass/_boilerplate.scss */
 body {
   font-size: 1em;
   line-height: 1.4;
 }
 
-/* line 18, ../sass/boilerplate.scss */
+/* line 18, ../sass/_boilerplate.scss */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-/* line 23, ../sass/boilerplate.scss */
+/* line 23, ../sass/_boilerplate.scss */
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-/* line 28, ../sass/boilerplate.scss */
+/* line 28, ../sass/_boilerplate.scss */
 hr {
   display: block;
   height: 1px;
@@ -107,24 +107,24 @@ hr {
   padding: 0;
 }
 
-/* line 37, ../sass/boilerplate.scss */
+/* line 37, ../sass/_boilerplate.scss */
 img {
   vertical-align: middle;
 }
 
-/* line 41, ../sass/boilerplate.scss */
+/* line 41, ../sass/_boilerplate.scss */
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-/* line 47, ../sass/boilerplate.scss */
+/* line 47, ../sass/_boilerplate.scss */
 textarea {
   resize: vertical;
 }
 
-/* line 51, ../sass/boilerplate.scss */
+/* line 51, ../sass/_boilerplate.scss */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -135,7 +135,7 @@ textarea {
 /************************************************************************/
 /*	Helper classes
 /************************************************************************/
-/* line 63, ../sass/boilerplate.scss */
+/* line 63, ../sass/_boilerplate.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -143,7 +143,7 @@ textarea {
   *text-indent: -9999px;
 }
 
-/* line 70, ../sass/boilerplate.scss */
+/* line 70, ../sass/_boilerplate.scss */
 .ir:before {
   content: "";
   display: block;
@@ -151,13 +151,13 @@ textarea {
   height: 150%;
 }
 
-/* line 77, ../sass/boilerplate.scss */
+/* line 77, ../sass/_boilerplate.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 82, ../sass/boilerplate.scss */
+/* line 82, ../sass/_boilerplate.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -169,7 +169,7 @@ textarea {
   width: 1px;
 }
 
-/* line 94, ../sass/boilerplate.scss */
+/* line 94, ../sass/_boilerplate.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -180,59 +180,28 @@ textarea {
   width: auto;
 }
 
-/* line 103, ../sass/boilerplate.scss */
+/* line 103, ../sass/_boilerplate.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 108, ../sass/boilerplate.scss */
+/* line 108, ../sass/_boilerplate.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 113, ../sass/boilerplate.scss */
+/* line 113, ../sass/_boilerplate.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 117, ../sass/boilerplate.scss */
+/* line 117, ../sass/_boilerplate.scss */
 .clearfix {
   *zoom: 1;
 }
 
-/************************************************************************/
-/*	Sticky Footer
-/************************************************************************/
-/* line 10, ../../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
-html, body {
-  height: 100%;
-}
-
-/* line 12, ../../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
-#root {
-  clear: both;
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin-bottom: -54px;
-}
-/* line 18, ../../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
-#root #root_footer {
-  height: 54px;
-}
-
-/* line 20, ../../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
-#footer {
-  clear: both;
-  position: relative;
-  height: 54px;
-}
-
-/************************************************************************/
-/*	Colors Vars                                                          
-/************************************************************************/
 /************************************************************************/
 /*	Fonts
 /************************************************************************/
@@ -285,12 +254,46 @@ html, body {
 }
 
 /************************************************************************/
+/*	Sticky Footer
+/************************************************************************/
+/* line 10, ../../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 12, ../../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#root {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -54px;
+}
+/* line 18, ../../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#root #root_footer {
+  height: 54px;
+}
+
+/* line 20, ../../../../../Bureau/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#footer {
+  clear: both;
+  position: relative;
+  height: 54px;
+}
+
+/************************************************************************/
+/*	Colors Vars                                                          
+/************************************************************************/
+/************************************************************************/
 /*	Susy Vars
+/************************************************************************/
+/************************************************************************/
+/*	Transition Default
 /************************************************************************/
 /************************************************************************/
 /*	Grid
 /************************************************************************/
-/* line 123, ../sass/screen.scss */
+/* line 4, ../sass/_grid.scss */
 .col1 {
   width: 6.69643%;
   float: left;
@@ -298,7 +301,7 @@ html, body {
   display: inline;
 }
 
-/* line 127, ../sass/screen.scss */
+/* line 8, ../sass/_grid.scss */
 .col2 {
   width: 15.17857%;
   float: left;
@@ -306,7 +309,7 @@ html, body {
   display: inline;
 }
 
-/* line 131, ../sass/screen.scss */
+/* line 12, ../sass/_grid.scss */
 .col3 {
   width: 23.66071%;
   float: left;
@@ -314,7 +317,7 @@ html, body {
   display: inline;
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 16, ../sass/_grid.scss */
 .col4 {
   width: 32.14286%;
   float: left;
@@ -322,7 +325,7 @@ html, body {
   display: inline;
 }
 
-/* line 139, ../sass/screen.scss */
+/* line 20, ../sass/_grid.scss */
 .col5 {
   width: 40.625%;
   float: left;
@@ -330,7 +333,7 @@ html, body {
   display: inline;
 }
 
-/* line 143, ../sass/screen.scss */
+/* line 24, ../sass/_grid.scss */
 .col6 {
   width: 49.10714%;
   float: left;
@@ -338,7 +341,7 @@ html, body {
   display: inline;
 }
 
-/* line 147, ../sass/screen.scss */
+/* line 28, ../sass/_grid.scss */
 .col7 {
   width: 57.58929%;
   float: left;
@@ -346,7 +349,7 @@ html, body {
   display: inline;
 }
 
-/* line 151, ../sass/screen.scss */
+/* line 32, ../sass/_grid.scss */
 .col8 {
   width: 66.07143%;
   float: left;
@@ -354,7 +357,7 @@ html, body {
   display: inline;
 }
 
-/* line 155, ../sass/screen.scss */
+/* line 36, ../sass/_grid.scss */
 .col9 {
   width: 74.55357%;
   float: left;
@@ -362,7 +365,7 @@ html, body {
   display: inline;
 }
 
-/* line 159, ../sass/screen.scss */
+/* line 40, ../sass/_grid.scss */
 .col10 {
   width: 83.03571%;
   float: left;
@@ -370,7 +373,7 @@ html, body {
   display: inline;
 }
 
-/* line 163, ../sass/screen.scss */
+/* line 44, ../sass/_grid.scss */
 .col11 {
   width: 91.51786%;
   float: left;
@@ -378,7 +381,7 @@ html, body {
   display: inline;
 }
 
-/* line 167, ../sass/screen.scss */
+/* line 48, ../sass/_grid.scss */
 .col12 {
   width: 100%;
   float: left;
@@ -386,19 +389,16 @@ html, body {
   display: inline;
 }
 
-/* line 171, ../sass/screen.scss */
+/* line 52, ../sass/_grid.scss */
 .alpha {
   margin-left: 0px !important;
 }
 
-/* line 175, ../sass/screen.scss */
+/* line 56, ../sass/_grid.scss */
 .omega {
   margin-right: 0px !important;
 }
 
-/************************************************************************/
-/*	Transition Default
-/************************************************************************/
 /************************************************************************/
 /*	General styles
 /************************************************************************/
@@ -409,12 +409,12 @@ html, body {
   box-sizing: border-box;
 }
 
-/* line 192, ../sass/screen.scss */
+/* line 7, ../sass/_layout.scss */
 body {
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 196, ../sass/screen.scss */
+/* line 11, ../sass/_layout.scss */
 .wrapper {
   position: relative;
   *zoom: 1;
@@ -433,17 +433,17 @@ body {
   clear: both;
 }
 
-/* line 202, ../sass/screen.scss */
+/* line 17, ../sass/_layout.scss */
 .left {
   float: left;
 }
 
-/* line 206, ../sass/screen.scss */
+/* line 21, ../sass/_layout.scss */
 .right {
   float: right;
 }
 
-/* line 210, ../sass/screen.scss */
+/* line 25, ../sass/_layout.scss */
 .centerBloc {
   width: auto;
   margin: 0 auto;
@@ -451,7 +451,7 @@ body {
   position: relative;
 }
 
-/* line 217, ../sass/screen.scss */
+/* line 32, ../sass/_layout.scss */
 p {
   margin: 0 0 15px 0;
   font-size: 14px;
@@ -459,12 +459,12 @@ p {
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 224, ../sass/screen.scss */
+/* line 39, ../sass/_layout.scss */
 p:last-child {
   margin-bottom: 0px;
 }
 
-/* line 228, ../sass/screen.scss */
+/* line 43, ../sass/_layout.scss */
 a {
   text-decoration: none;
   color: #ee3e52;
@@ -473,7 +473,7 @@ a {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 233, ../sass/screen.scss */
+/* line 48, ../sass/_layout.scss */
 a:hover {
   text-decoration: none;
   color: #ff576b;
@@ -482,13 +482,13 @@ a:hover {
 /************************************************************************/
 /*	H1, H2, H3, H4, H5, H6 styles
 /************************************************************************/
-/* line 242, ../sass/screen.scss */
+/* line 57, ../sass/_layout.scss */
 h1, h2, h3, h4 {
   font-family: "novecento_sans_widedemibold", sans-serif;
   text-transform: lowercase;
 }
 
-/* line 247, ../sass/screen.scss */
+/* line 62, ../sass/_layout.scss */
 h2 {
   color: #fff;
   background: #222528;
@@ -499,7 +499,7 @@ h2 {
   font-size: 18px;
   margin-bottom: 35px;
 }
-/* line 258, ../sass/screen.scss */
+/* line 73, ../sass/_layout.scss */
 h2 strong {
   color: #0bc0f4;
   font-weight: normal;
@@ -508,7 +508,7 @@ h2 strong {
 /************************************************************************/
 /*	Buttons styles
 /************************************************************************/
-/* line 268, ../sass/screen.scss */
+/* line 83, ../sass/_layout.scss */
 .btn, .btn1, .btn2 {
   display: inline-block;
   height: 44px;
@@ -519,36 +519,36 @@ h2 strong {
   font-family: "novecento_sans_widemedium", sans-serif;
   text-transform: lowercase;
 }
-/* line 278, ../sass/screen.scss */
+/* line 93, ../sass/_layout.scss */
 .btn:focus, .btn1:focus, .btn2:focus {
   position: relative;
   top: 2px;
 }
-/* line 283, ../sass/screen.scss */
+/* line 98, ../sass/_layout.scss */
 .btn:active, .btn1:active, .btn2:active {
   position: relative;
   top: 2px;
 }
 
-/* line 289, ../sass/screen.scss */
+/* line 104, ../sass/_layout.scss */
 .btn1 {
   color: #fff;
   background: #ee3e52;
 }
-/* line 294, ../sass/screen.scss */
+/* line 109, ../sass/_layout.scss */
 .btn1:hover {
   background: #ff576b;
   color: #fff;
 }
 
-/* line 300, ../sass/screen.scss */
+/* line 115, ../sass/_layout.scss */
 .btn2 {
   color: #ee3e52;
   background: transparent;
   border: 2px solid #ee3e52;
   line-height: 40px;
 }
-/* line 307, ../sass/screen.scss */
+/* line 122, ../sass/_layout.scss */
 .btn2:hover {
   background: #ff576b;
   border-color: #ff576b;
@@ -558,17 +558,17 @@ h2 strong {
 /************************************************************************/
 /*	#topBar
 /************************************************************************/
-/* line 317, ../sass/screen.scss */
+/* line 132, ../sass/_layout.scss */
 #topBar {
   height: 44px;
   color: #5b6168;
   background: #222528;
 }
-/* line 322, ../sass/screen.scss */
+/* line 137, ../sass/_layout.scss */
 #topBar .wrapper {
   padding-left: 185px;
 }
-/* line 326, ../sass/screen.scss */
+/* line 141, ../sass/_layout.scss */
 #topBar p {
   line-height: 44px;
   margin-bottom: 0px;
@@ -577,17 +577,17 @@ h2 strong {
 /************************************************************************/
 /*	mainBar
 /************************************************************************/
-/* line 335, ../sass/screen.scss */
+/* line 150, ../sass/_layout.scss */
 #mainBar {
   height: 94px;
   padding-bottom: 10px;
   background: #fff;
 }
-/* line 340, ../sass/screen.scss */
+/* line 155, ../sass/_layout.scss */
 #mainBar .wrapper {
   padding-left: 185px;
 }
-/* line 344, ../sass/screen.scss */
+/* line 159, ../sass/_layout.scss */
 #mainBar #logo {
   position: absolute;
   top: -44px;
@@ -601,42 +601,91 @@ h2 strong {
   overflow: hidden;
   background: url('../img/logo.png?1393434575');
 }
-/* line 357, ../sass/screen.scss */
+/* line 172, ../sass/_layout.scss */
 #mainBar #logo a {
   position: absolute;
   width: 100%;
   height: 100%;
   text-indent: -9999;
 }
-/* line 365, ../sass/screen.scss */
+/* line 180, ../sass/_layout.scss */
 #mainBar #nav {
   height: 84px;
   padding: 40px 0px;
   margin: 0px;
 }
-/* line 370, ../sass/screen.scss */
+/* line 185, ../sass/_layout.scss */
 #mainBar #nav li {
   margin-right: 30px;
 }
-/* line 373, ../sass/screen.scss */
+/* line 188, ../sass/_layout.scss */
 #mainBar #nav li a {
   font-family: "novecento_sans_widedemibold", sans-serif;
   text-transform: lowercase;
   color: #222528;
 }
-/* line 378, ../sass/screen.scss */
+/* line 193, ../sass/_layout.scss */
 #mainBar #nav li a:hover {
   color: #0bc0f4;
 }
 
 /************************************************************************/
+/*  Footer
+/************************************************************************/
+/* line 208, ../sass/_layout.scss */
+footer h3 {
+  color: #fff;
+  font-size: 18px;
+  margin: 0 0 15px 0;
+}
+/* line 214, ../sass/_layout.scss */
+footer p, footer a, footer li {
+  color: #5b6168;
+  font-size: 12px;
+  font-weight: 500;
+}
+/* line 220, ../sass/_layout.scss */
+footer li {
+  margin-bottom: 8px;
+}
+/* line 223, ../sass/_layout.scss */
+footer li a:hover {
+  padding-left: 5px;
+}
+/* line 228, ../sass/_layout.scss */
+footer #preFooter {
+  background: #101010;
+  padding: 35px 0;
+}
+/* line 233, ../sass/_layout.scss */
+footer #bigFooter {
+  background: #222528;
+  padding: 35px 0;
+}
+/* line 237, ../sass/_layout.scss */
+footer #bigFooter .widget {
+  margin-bottom: 30px;
+}
+/* line 241, ../sass/_layout.scss */
+footer #bigFooter #copyright {
+  margin-top: 30px;
+  border-top: 2px solid #2b2e30;
+  padding: 30px 0 0 0;
+}
+/* line 246, ../sass/_layout.scss */
+footer #bigFooter #copyright p {
+  color: #fff;
+  text-align: center;
+}
+
+/************************************************************************/
 /*	Slider
 /************************************************************************/
-/* line 389, ../sass/screen.scss */
+/* line 4, ../sass/_home.scss */
 #slider {
   margin: 30px 0 40px 0;
 }
-/* line 392, ../sass/screen.scss */
+/* line 7, ../sass/_home.scss */
 #slider img {
   width: 100%;
   height: auto;
@@ -648,31 +697,35 @@ h2 strong {
 /************************************************************************/
 /*  Home
 /************************************************************************/
-/* line 407, ../sass/screen.scss */
+/* line 22, ../sass/_home.scss */
+.index #content {
+  padding: 50px 0;
+}
+
+/* line 25, ../sass/_home.scss */
 .grayBackground {
   background: #f2f2f2;
-  padding: 50px 0;
 }
 
 /************************************************************************/
 /*	campaignBloc
 /************************************************************************/
-/* line 415, ../sass/screen.scss */
+/* line 32, ../sass/_home.scss */
 .campaignBloc {
   background: #fff;
   overflow: hidden;
   margin-bottom: 1.78571%;
 }
-/* line 420, ../sass/screen.scss */
+/* line 37, ../sass/_home.scss */
 .campaignBloc .campaignImage {
   position: relative;
 }
-/* line 423, ../sass/screen.scss */
+/* line 40, ../sass/_home.scss */
 .campaignBloc .campaignImage img {
   width: 100%;
   height: auto;
 }
-/* line 428, ../sass/screen.scss */
+/* line 45, ../sass/_home.scss */
 .campaignBloc .campaignImage h3 {
   position: absolute;
   bottom: 25px;
@@ -686,31 +739,31 @@ h2 strong {
   text-transform: lowercase;
   font-family: "novecento_sans_widedemibold", sans-serif;
 }
-/* line 442, ../sass/screen.scss */
+/* line 59, ../sass/_home.scss */
 .campaignBloc .campaignImage h3 strong.price {
   margin-left: 30px;
   color: #0bc0f4;
   font-weight: normal;
 }
-/* line 450, ../sass/screen.scss */
+/* line 67, ../sass/_home.scss */
 .campaignBloc .campaignInfos {
   padding: 25px;
   background: #222528;
 }
-/* line 454, ../sass/screen.scss */
+/* line 71, ../sass/_home.scss */
 .campaignBloc .campaignInfos .preOrderQuantity {
   color: #fff;
   font-weight: 600;
   margin-bottom: 0px;
 }
-/* line 459, ../sass/screen.scss */
+/* line 76, ../sass/_home.scss */
 .campaignBloc .campaignInfos .preOrderQuantity strong {
   color: #0bc0f4;
   font-size: 22px;
   margin-right: 5px;
   font-weight: bold;
 }
-/* line 467, ../sass/screen.scss */
+/* line 84, ../sass/_home.scss */
 .campaignBloc .campaignInfos .percentage {
   color: #0bc0f4;
   margin-bottom: 0px;
@@ -718,7 +771,7 @@ h2 strong {
   font-weight: 600;
   font-weight: bold;
 }
-/* line 475, ../sass/screen.scss */
+/* line 92, ../sass/_home.scss */
 .campaignBloc .campaignInfos .progressBar {
   margin: 10px 0px 20px 0;
   height: 16px;
@@ -728,13 +781,13 @@ h2 strong {
   position: relative;
   overflow: hidden;
 }
-/* line 484, ../sass/screen.scss */
+/* line 101, ../sass/_home.scss */
 .campaignBloc .campaignInfos .progressBar .progressValue {
   height: 12px;
   border: 0px solid #101010;
   background: url('../img/bgProgressBar.png?1393434575') repeat;
 }
-/* line 491, ../sass/screen.scss */
+/* line 108, ../sass/_home.scss */
 .campaignBloc .campaignInfos .daysLeft {
   color: #fff;
   font-size: 12px;
@@ -744,56 +797,266 @@ h2 strong {
   padding-left: 22px;
   background: url('../img/icon-daysLeft.png?1393434575') no-repeat left 13px;
 }
-/* line 501, ../sass/screen.scss */
+/* line 118, ../sass/_home.scss */
 .campaignBloc .campaignInfos .daysLeft strong {
   color: #0bc0f4;
 }
 
-/************************************************************************/
-/*	Footer
-/************************************************************************/
-/* line 513, ../sass/screen.scss */
-footer h3 {
-  color: #fff;
-  font-size: 18px;
-  margin: 0 0 15px 0;
+/* line 1, ../sass/_campaignAdd.scss */
+.campaignAdd #content {
+  padding-bottom: 100px;
 }
-/* line 519, ../sass/screen.scss */
-footer p, footer a, footer li {
-  color: #5b6168;
-  font-size: 12px;
-  font-weight: 500;
+
+/*	StatusBar */
+/* line 7, ../sass/_campaignAdd.scss */
+#campaignStatus {
+  padding: 50px 0 30px 0;
+  margin-bottom: 45px;
 }
-/* line 525, ../sass/screen.scss */
-footer li {
-  margin-bottom: 8px;
+/* line 11, ../sass/_campaignAdd.scss */
+#campaignStatus .statusBar {
+  position: relative;
+  height: 15px;
+  width: 100%;
+  background: #929da8;
 }
-/* line 528, ../sass/screen.scss */
-footer li a:hover {
-  padding-left: 5px;
+/* line 17, ../sass/_campaignAdd.scss */
+#campaignStatus .statusBar .statusBarProgress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 5%;
+  background: #ee3e52;
 }
-/* line 533, ../sass/screen.scss */
-footer #preFooter {
-  background: #101010;
-  padding: 35px 0;
-}
-/* line 538, ../sass/screen.scss */
-footer #bigFooter {
-  background: #222528;
-  padding: 35px 0;
-}
-/* line 542, ../sass/screen.scss */
-footer #bigFooter .widget {
-  margin-bottom: 30px;
-}
-/* line 546, ../sass/screen.scss */
-footer #bigFooter #copyright {
-  margin-top: 30px;
-  border-top: 2px solid #2b2e30;
-  padding: 30px 0 0 0;
-}
-/* line 551, ../sass/screen.scss */
-footer #bigFooter #copyright p {
-  color: #fff;
+/* line 26, ../sass/_campaignAdd.scss */
+#campaignStatus .statusBar .statusStep {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: #929da8;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 26px;
+  top: -12px;
   text-align: center;
+  cursor: pointer;
+}
+/* line 39, ../sass/_campaignAdd.scss */
+#campaignStatus .statusBar .statusStepActive {
+  background: #ee3e52;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 43, ../sass/_campaignAdd.scss */
+#campaignStatus .statusBar .statusStepActive:hover {
+  background: #ff576b;
+}
+/* line 48, ../sass/_campaignAdd.scss */
+#campaignStatus .statusBar .statusStep1 {
+  left: -5px;
+}
+/* line 51, ../sass/_campaignAdd.scss */
+#campaignStatus .statusBar .statusStep2 {
+  left: 48.0%;
+}
+/* line 54, ../sass/_campaignAdd.scss */
+#campaignStatus .statusBar .statusStep3 {
+  right: -5px;
+}
+/* line 57, ../sass/_campaignAdd.scss */
+#campaignStatus .statusBar .statusStepText {
+  position: absolute;
+  top: 40px;
+  cursor: pointer;
+  color: #ee3e52;
+  font-size: 16px;
+  font-family: "novecento_sans_widedemibold", sans-serif;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 66, ../sass/_campaignAdd.scss */
+#campaignStatus .statusBar .statusStepText:hover {
+  color: #ff576b;
+}
+/* line 70, ../sass/_campaignAdd.scss */
+#campaignStatus .statusBar .statusStepText1 {
+  z-index: 10;
+  left: 0;
+}
+/* line 74, ../sass/_campaignAdd.scss */
+#campaignStatus .statusBar .statusStepText2 {
+  position: relative;
+  z-index: 5;
+  display: block;
+  text-align: center;
+}
+/* line 80, ../sass/_campaignAdd.scss */
+#campaignStatus .statusBar .statusStepText3 {
+  z-index: 10;
+  right: 0;
+}
+
+/*	SideBar */
+/* line 89, ../sass/_campaignAdd.scss */
+#campaignConfig {
+  padding-bottom: 20px;
+}
+/* line 92, ../sass/_campaignAdd.scss */
+#campaignConfig h2 {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0px;
+}
+/* line 96, ../sass/_campaignAdd.scss */
+#campaignConfig h2:nth-child(n+2) {
+  margin-top: 20px;
+}
+/* line 99, ../sass/_campaignAdd.scss */
+#campaignConfig h2 span {
+  float: right;
+  color: #0bc0f4;
+  font-size: 32px;
+}
+/* line 105, ../sass/_campaignAdd.scss */
+#campaignConfig .btn1 {
+  cursor: pointer;
+  display: block;
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+}
+/* line 112, ../sass/_campaignAdd.scss */
+#campaignConfig .fpd-content {
+  background: #fff;
+  padding: 0 20px 20px 20px;
+}
+/* line 116, ../sass/_campaignAdd.scss */
+#campaignConfig .fpd-content h3 {
+  padding: 20px 0 10px 0;
+  font-size: 14px;
+  font-family: "novecento_sans_widedemibold", sans-serif;
+}
+/* line 121, ../sass/_campaignAdd.scss */
+#campaignConfig .fpd-content .fpd-products {
+  background: #f2f2f2;
+  margin-top: 10px;
+}
+/* line 125, ../sass/_campaignAdd.scss */
+#campaignConfig .fpd-content .fpd-products li img {
+  background: #fff;
+}
+/* line 129, ../sass/_campaignAdd.scss */
+#campaignConfig .fpd-content .infoMsg {
+  color: #ee2c3a;
+}
+/* line 132, ../sass/_campaignAdd.scss */
+#campaignConfig .fpd-content .fpd-textarea {
+  width: 60%;
+  height: 40px;
+  background: #f2f2f2;
+  border: none;
+  color: #0bc0f4;
+  font-size: 16px;
+  padding: 10px 5px;
+  font-weight: bold;
+}
+/* line 142, ../sass/_campaignAdd.scss */
+#campaignConfig .fpd-content .fpd-submit {
+  height: 40px;
+  margin-left: 15px;
+}
+/* line 147, ../sass/_campaignAdd.scss */
+#campaignConfig .sideContent {
+  background: #fff;
+  padding: 20px;
+}
+/* line 151, ../sass/_campaignAdd.scss */
+#campaignConfig .ui-slider {
+  position: relative;
+  border: none;
+  background: #f2f2f2;
+  height: 7px;
+  border-radius: 10px;
+}
+/* line 158, ../sass/_campaignAdd.scss */
+#campaignConfig .ui-slider-handle {
+  position: absolute;
+  top: -4px;
+  z-index: 2;
+  width: 15px;
+  height: 15px;
+  margin-left: -10px;
+  background: #fff;
+  border: 5px solid #ee2c3a;
+  border-radius: 15px;
+  -webkit-transition: none;
+  transition: none;
+}
+/* line 171, ../sass/_campaignAdd.scss */
+#campaignConfig .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  height: 100%;
+  border-radius: 15px;
+  background: #ee2c3a;
+}
+/* line 179, ../sass/_campaignAdd.scss */
+#campaignConfig #productNumberSlider, #campaignConfig #productPriceSlider {
+  margin-top: 20px;
+}
+/* line 181, ../sass/_campaignAdd.scss */
+#campaignConfig #productNumberSlider span, #campaignConfig #productPriceSlider span {
+  position: absolute;
+  top: -25px;
+  font-size: 13px;
+  color: #ee2c3a;
+  font-weight: bold;
+}
+/* line 190, ../sass/_campaignAdd.scss */
+#campaignConfig #configGoal span.infos {
+  margin-top: 15px;
+  color: #222528;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+/* line 197, ../sass/_campaignAdd.scss */
+#campaignConfig #configGoal span.infos span {
+  font-size: 24px;
+  color: #0bc0f4;
+}
+/* line 201, ../sass/_campaignAdd.scss */
+#campaignConfig #configGoal span.infos input {
+  width: 50px;
+  margin-left: 10px;
+  text-align: right;
+  background: #f2f2f2;
+  color: #ee2c3a;
+  font-weight: bold;
+  border: none;
+  padding: 5px 2px;
+}
+/* line 212, ../sass/_campaignAdd.scss */
+#campaignConfig #configGoal p {
+  margin-top: 15px;
+  color: #5b6168;
+  font-size: 13px;
+}
+
+/*	Design */
+/* line 225, ../sass/_campaignAdd.scss */
+#campaignDesign .fpd-main-color {
+  background: #222528;
+  color: #fff;
+}
+/* line 229, ../sass/_campaignAdd.scss */
+#campaignDesign .fpd-main-color h3 {
+  font-size: 18px;
 }

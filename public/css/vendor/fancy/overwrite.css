@@ -21,3 +21,9 @@
 	height: 110px;
 	border: none;
 }
+.fpd-sidebar > .fpd-content > div{
+	padding: 0;
+}
+#campaignConfig .fpd-content .fpd-products{
+	margin-top: 0;
+}

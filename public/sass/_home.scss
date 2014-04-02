@@ -1,0 +1,123 @@
+/************************************************************************/
+/*	Slider
+/************************************************************************/
+#slider {
+  margin: 30px 0 40px 0;
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/************************************************************************/
+/*	#content
+/************************************************************************/
+#content {
+}
+
+/************************************************************************/
+/*  Home
+/************************************************************************/
+.index #content{
+  padding: 50px 0;
+}
+.grayBackground {
+  background: $gray;
+}
+
+/************************************************************************/
+/*	campaignBloc
+/************************************************************************/
+.campaignBloc {
+  background: #fff;
+  overflow: hidden;
+  margin-bottom: 1.78571%;
+  
+  .campaignImage {
+    position: relative;
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+    
+    h3 {
+      position: absolute;
+      bottom: 25px;
+      margin-bottom: 0px;
+      width: 100%;
+      text-align: center;
+
+      background-color: rgba(255,255,255,.9); // layer fill content
+      padding: 10px;
+      color: $darkGray;
+      font-size: 24px;
+      text-transform: lowercase;  
+      font-family: $novecentoDemiBold;
+  
+      strong.price {
+        margin-left: 30px;
+        color: $featured-color;
+        font-weight: normal;
+      }
+    }
+  }
+  
+  .campaignInfos {
+    padding: 25px;
+    background: $darkGray;
+    
+    .preOrderQuantity {
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 0px;
+      
+      strong {
+        color: $featured-color;
+        font-size: 22px;
+        margin-right: 5px;
+        font-weight: bold;
+      }
+    }
+    
+    .percentage {
+      color: $featured-color;
+      margin-bottom: 0px;
+      font-size: 22px;
+      font-weight: 600;
+      font-weight: bold;
+    }
+    
+    .progressBar {
+      margin: 10px 0px 20px 0;
+      height: 16px;
+      width: 100%;
+      padding: 2px;
+      background-color: #101010;
+      position: relative;
+      overflow: hidden;
+     
+      .progressValue {
+        height: 12px;
+        border: 0px solid #101010;
+        @include background(image-url('bgProgressBar.png') repeat);
+      }
+    }
+    
+    .daysLeft {
+      color: #fff;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 44px;
+      margin: 0px;
+      padding-left: 22px;
+      @include background(image-url('icon-daysLeft.png') no-repeat left 13px);
+
+      
+      strong {
+        color: $featured-color;
+      }
+    }
+  }
+}

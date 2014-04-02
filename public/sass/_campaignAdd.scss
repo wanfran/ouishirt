@@ -1,0 +1,233 @@
+.campaignAdd #content{
+	padding-bottom: 100px;
+}
+
+/*	StatusBar */
+
+#campaignStatus{
+	padding: 50px 0 30px 0;
+	margin-bottom: 45px;
+
+	.statusBar{
+		position: relative;
+		height: 15px;
+		width: 100%;
+		background: #929da8;
+
+		.statusBarProgress{
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 5%;
+			background: $links-color;
+		}
+
+		.statusStep{
+			position: absolute;
+			width: 40px;
+			height: 40px;
+			border-radius: 20px;
+			background: #929da8;
+			color: #ffffff;
+			font-weight: bold;
+			font-size: 26px;
+			top: -12px;
+			text-align: center;
+			cursor: pointer;
+		}
+		.statusStepActive{
+			background: $links-color;
+  			@include transition;
+
+			&:hover{
+				background: $links-hover-color;
+			}
+
+		}
+		.statusStep1{
+			left: -5px;
+		}
+		.statusStep2{
+			left: 48.0%;
+		}
+		.statusStep3{
+			right: -5px;
+		}
+		.statusStepText{
+			position: absolute;
+			top: 40px;
+			cursor: pointer;
+			color: $links-color;
+			font-size: 16px;
+			font-family: $novecentoDemiBold;
+  			@include transition;
+
+			&:hover{
+				color: $links-hover-color;
+			}
+		}
+		.statusStepText1{
+			z-index: 10;
+			left: 0;
+		}
+		.statusStepText2{
+			position: relative;
+			z-index: 5;
+			display: block;
+			text-align: center;
+		}
+		.statusStepText3{
+			z-index: 10;
+			right: 0;
+		}
+	}
+}
+
+/*	SideBar */
+
+#campaignConfig{
+	padding-bottom: 20px;
+
+	h2{
+		position: relative;
+		width: 100%;
+		margin-bottom: 0px;
+		&:nth-child(n+2){
+			margin-top:20px;
+		}
+		span{
+			float: right;
+			color: $featured-color;
+			font-size: 32px;
+		}
+	}
+	.btn1{
+		cursor: pointer;
+		display: block;
+		font-size: 18px;
+		margin-top: 20px;
+		text-align: center;
+	}
+	.fpd-content{
+		background: #fff;
+		padding: 0 20px 20px 20px;
+
+		h3{
+			padding: 20px 0 10px 0;
+			font-size: 14px;
+			font-family: $novecentoDemiBold;
+		}		
+		.fpd-products{
+			background: $gray;
+			margin-top: 10px;
+
+			li img{
+				background: #fff;
+			}
+		}
+		.infoMsg{
+			color: $redAlert;
+		}
+		.fpd-textarea{
+			width: 60%;
+			height: 40px;
+			background: $gray;
+			border: none;
+			color: #0bc0f4;
+			font-size: 16px;
+			padding: 10px 5px;
+			font-weight: bold;
+		}
+		.fpd-submit{
+			height: 40px;
+			margin-left: 15px;
+		}
+	}
+	.sideContent{
+		background: #fff;
+		padding: 20px;
+	}
+	.ui-slider{
+		position: relative;
+		border: none;
+		background: $gray;
+		height: 7px;
+		border-radius: 10px;
+	}
+	.ui-slider-handle{
+		position: absolute;
+		top: -4px;
+		z-index: 2;
+		width: 15px;
+		height: 15px;
+		margin-left: -10px;
+		background: #fff;
+		border: 5px solid $redAlert;
+		border-radius: 15px;
+		-webkit-transition: none;
+		transition: none;
+	}
+	.ui-slider-range{
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		height: 100%;
+		border-radius: 15px;
+		background: $redAlert;
+	}
+	#productNumberSlider, #productPriceSlider{
+		margin-top: 20px;
+		span{
+			position: absolute;
+			top: -25px;
+			font-size: 13px;
+			color: $redAlert;
+			font-weight: bold;
+		}
+	}
+	#configGoal{
+		span.infos{
+			margin-top: 15px;
+			color: $darkGray;
+			font-size: 14px;
+			font-weight: bold;
+			letter-spacing: -1px;
+
+			span{
+				font-size: 24px;
+				color: $featured-color;
+			}
+			input{
+				width: 50px;
+				margin-left: 10px;
+				text-align: right;
+				background: $gray;
+				color: $redAlert;
+				font-weight: bold;
+				border: none;
+				padding: 5px 2px;
+			}
+		}
+		p{
+			margin-top: 15px;
+			color: $lightGray;
+			font-size: 13px;
+		}
+	}
+		
+}
+
+/*	Design */
+
+#campaignDesign{
+
+	.fpd-main-color{
+		background: $darkGray;
+		color: #fff;
+
+		h3{
+			font-size: 18px;
+		}
+	}
+}

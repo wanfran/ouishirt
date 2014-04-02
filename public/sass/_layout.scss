@@ -1,0 +1,252 @@
+
+/************************************************************************/
+/*	General styles
+/************************************************************************/
+@include border-box-sizing;
+
+body {
+  font-family: $open;
+}
+
+.wrapper {
+  position: relative;
+  @include container;
+  min-width: 1140px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.centerBloc {
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+p {
+  margin: 0 0 15px 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $open;
+}
+
+p:last-child {
+  margin-bottom: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: $links-color;
+  @include transition;
+  
+  &:hover {
+    text-decoration: none;
+    color: $links-hover-color;
+  }
+}
+
+/************************************************************************/
+/*	H1, H2, H3, H4, H5, H6 styles
+/************************************************************************/
+h1, h2, h3, h4 {
+  font-family: $novecentoDemiBold;
+  text-transform: lowercase;
+}
+
+h2 {
+  color: #fff;
+  background: $darkGray;
+  padding: 0px 20px;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  margin-bottom: 35px;
+  
+  
+  strong {
+    color: $featured-color;
+    font-weight: normal;
+  }
+}
+
+
+/************************************************************************/
+/*	Buttons styles
+/************************************************************************/
+.btn {
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 15px;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: $novecentoMedium;
+  text-transform: lowercase;
+  
+  &:focus {
+    position: relative;
+    top: 2px;
+  }
+  
+  &:active {
+    position: relative;
+    top: 2px;
+  }
+}
+
+.btn1 {
+  @extend .btn;
+  color: #fff;
+  background: $links-color;
+  
+  &:hover {
+    background: $links-hover-color;
+    color: #fff;
+  }
+}
+
+.btn2 {
+  @extend .btn;
+  color: $links-color;
+  background: transparent;
+  border: 2px solid $links-color;
+  line-height: 40px;
+  
+  &:hover {
+    background: $links-hover-color;
+    border-color: $links-hover-color;
+    color: #fff;
+  }
+}
+
+/************************************************************************/
+/*	#topBar
+/************************************************************************/
+#topBar {
+  height: 44px;
+  color: $lightGray;
+  background: $darkGray;
+
+  .wrapper {
+    padding-left: 185px;
+  }
+
+  p {
+    line-height: 44px;
+    margin-bottom: 0px;
+  }
+}
+
+/************************************************************************/
+/*	mainBar
+/************************************************************************/
+#mainBar {
+  height: 94px;
+  padding-bottom: 10px;
+  background: #fff;
+  
+  .wrapper {
+    padding-left: 185px;
+  }
+  
+  #logo {
+    position: absolute;
+    top: -44px;
+    left: 10px;
+    display: block;
+    width: 125px;
+    height: 128px;
+    margin: 0px;
+    padding: 0px;
+    text-indent: -9999px;
+    overflow: hidden;
+    @include background(image-url("logo.png"));
+
+    a{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      text-indent: -9999;
+    }
+  }
+  
+  #nav {
+    height: 84px;
+    padding: 40px 0px;
+    margin: 0px;
+    
+    li {
+      margin-right: 30px;
+      
+      a {
+        font-family: $novecentoDemiBold;
+        text-transform: lowercase;
+        color: $darkGray;
+        
+        &:hover {
+          color: $featured-color;
+        }
+      }
+    }
+  }
+}
+
+
+
+/************************************************************************/
+/*  Footer
+/************************************************************************/
+footer {
+
+  h3 {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 0 15px 0;
+  }
+  
+  p, a, li {
+    color: $lightGray;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  li {
+    margin-bottom: 8px;
+    
+    a:hover {
+      padding-left: 5px;
+    }
+  }
+
+  #preFooter {
+    background: #101010;
+    padding: 35px 0;
+  }
+  
+  #bigFooter {
+    background: $darkGray;
+    padding: 35px 0;
+    
+    .widget {
+      margin-bottom: 30px;
+    }
+    
+    #copyright {
+      margin-top: 30px;
+      border-top: 2px solid #2b2e30;
+      padding: 30px 0 0 0;
+      
+      p {
+        color: #fff;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -5,11 +5,11 @@
 <?php  
 
 //CSS
-$this->headLink()	->appendStylesheet($this->basePath() . '/css/vendor/fancy/plugins.min.css')
-					->appendStylesheet($this->basePath() . '/css/vendor/fancy/jquery.fancyProductDesigner.css')
-					->appendStylesheet($this->basePath() . '/css/vendor/fancy/jquery.fancyProductDesigner-fonts.css')
-					->appendStylesheet('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css')
-					->appendStylesheet($this->basePath() . '/css/vendor/fancy/overwrite.css')
+$this->headLink()	->prependStylesheet($this->basePath() . '/css/vendor/fancy/overwrite.css')
+					->prependStylesheet('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css')
+					->prependStylesheet($this->basePath() . '/css/vendor/fancy/jquery.fancyProductDesigner-fonts.css')
+					->prependStylesheet($this->basePath() . '/css/vendor/fancy/jquery.fancyProductDesigner.css')
+					->prependStylesheet($this->basePath() . '/css/vendor/fancy/plugins.min.css')
 					;        
 //JS
 $this->headScript()//->prependFile($this->basePath() . '/js/vendor/fancy/jspdf.min.js') //PDF
@@ -29,15 +29,17 @@ $this->inlineScript()   ->prependFile($this->basePath('/js/campaign.js'))
 	<section id="content" class="grayBackground">
 		<div class="wrapper">
 			<div id="campaignStatus">
+				<?php echo $this->partial('campaign/partial/campaignStatus.phtml'); ?>
 			</div><!-- End campaignStatus -->
 			<div id="campaignConfig" class="col4">
 				<div id="configDesign" class="fpd-sidebar fpd-border-color fpd-clearfix">
-					<?php echo $this->partial('campaign/partial/sidebar.phtml'); ?>
-				</div>
+					<?php echo $this->partial('campaign/partial/sideDesign.phtml'); ?>
 				</div><!-- End configDesign -->
-				<div id="configGoal">
+				<div id="configGoal" style="display: none;">
+					<?php echo $this->partial('campaign/partial/sideGoal.phtml'); ?>
 				</div><!-- End configGoal -->
-				<div id="configCampaign">
+				<div id="configCampaign" style="display: none;">
+					<?php echo $this->partial('campaign/partial/sideCampaign.phtml'); ?>
 				</div><!-- End configCampaign -->
 			</div><!-- End campaignConfig -->
 			<div id="campaignDesign" class="fpd-product-container col8 omega">
